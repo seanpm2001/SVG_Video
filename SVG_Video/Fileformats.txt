@@ -1,0 +1,4 @@
+File formats for SVG video
+
+*.svg_vid
+*.svg_video
