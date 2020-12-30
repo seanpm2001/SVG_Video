@@ -1,0 +1,5 @@
+<header>
+<!-- Video header !-->
+	<compressionMethod="Entropy"></compressionMethod>
+	<encodingMethod="LZW"></encodingMethod>
+</header>
