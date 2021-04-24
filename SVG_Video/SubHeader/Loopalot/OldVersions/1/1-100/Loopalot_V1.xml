@@ -1,0 +1,18 @@
+<subheader> <!-- The subheader is an optional recommended header that defines how to compress content better using pre-defined methods. Remove comments for maximum memory efficiency (~1.1 KB) !-->
+<!-- Video subheader, to be placed below the header !-->
+<!-- This header is to be used for videos that loop 2 or more times. This header is especially useful for videos that loop 100 or more times, as the size decreases significantly compared to the same in MP4 format, as it can cut a 1.0-100 GiB file down to ~20000-2500000 bytes !-->
+  <compressionMode="Loopalot"></compressionMode> <!-- Header of the Loopalot compression method !-->
+  <videoLoopDurationMS_SI="5000"><videoLoopDurationMS_SI> <!-- Duration of the looped content in Milliseconds, 5000 milliseconds = 5 seconds !-->
+  <!-- SI Unit prefix cheat sheet, along with associated magic numbers only valid to SVG video
+  S_SI = seconds
+  MS_SI = Milliseconds
+  NS_SI = Nanoseconds
+  MIS_SI = Microseconds
+  PICS_SI = Picoseconds
+  FEMS_SI = Femtoseconds
+  ATTS_SI = Attoseconds
+  ZEPS_SI = Zeptoseconds
+  YOCS_SI = Yoctoseconds
+  !-->
+  <encoding2Method="LZW"></encoding2Method> <!-- LZW = Lempel-Ziv-Welch, A universal compression method used in various formats (such as GIF, PNG, JPG, etc.) and various programs (FFMPEG, etc.) !-->
+</subheader>
