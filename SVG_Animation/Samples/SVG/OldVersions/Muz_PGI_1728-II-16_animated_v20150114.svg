@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="330" height="220" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<rect x="0" y="188" width="330" height="32" stroke-width="1" stroke="rgb(200,200,200)" opacity="1" fill="rgb(240,240,240)"/>
+<rect x="0" y="173" width="330" height="15" stroke-width="0" opacity="1" fill="rgb(200,200,200)"/>
+<text text-anchor="middle" font-size="11" font-family="DejaVu Sans, sans-serif">
+	<tspan x="165" y="185" font-weight="bold" font-size="10">AN  EIFELIAN  TETRAPOD  TRACK  AND  ITS  MAKER</tspan>
+	<tspan x="165" y="200">Muz. PGI 1728.II.16 - the Zachełmie quarry, Poland</tspan>
+	<tspan x="165" y="215">based on <tspan fill="none">Niedźwiedzki et al. 2010</tspan></tspan>
+</text>
+<a xlink:href="https://dx.doi.org/10.1038/nature08623" xlink:show="new"><text x="124" y="215" fill="rgb(25,50,100)" font-size="11" font-family="DejaVu Sans, sans-serif">Niedźwiedzki et al. 2010</text></a>
+
+
+
+
+
+
+
+
+
+
+
+
+<g id="animated_section" transform="rotate(90 165 165)">
+
+
+
+
+<animateTransform
+	xlink:href="#footprints"
+	attributeName="transform"
+	type="translate"
+	dur="4000ms" 
+	repeatCount="indefinite"
+	values="
+		81 61 ;
+		81 297 ;
+		"
+	keyTimes="0; 1"
+	calcMode="linear"
+	/>
+
+
+<animate 
+	xlink:href="#footprint_pes_todo1_r"
+	attributeName="opacity"
+	attributeType="XML"
+	dur="4000ms" 
+	repeatCount="indefinite"
+	values="0.12; 1; 1; 1; 1"
+	keyTimes="0; 0.25; 0.5; 0.75; 1"
+	calcMode="discrete"
+	/>
+<animate 
+	xlink:href="#footprint_manus_todo1_l"
+	attributeName="opacity"
+	attributeType="XML"
+	dur="4000ms" 
+	repeatCount="indefinite"
+	values="0.12; 1; 1; 1; 1"
+	keyTimes="0; 0.25; 0.5; 0.75; 1"
+	calcMode="discrete"
+	/>
+
+
+<animate 
+	xlink:href="#footprint_pes_todo2_l"
+	attributeName="opacity"
+	attributeType="XML"
+	dur="4000ms" 
+	repeatCount="indefinite"
+	values="0.12; 0.12; 1; 1; 1"
+	keyTimes="0; 0.25; 0.5; 0.75; 1"
+	calcMode="discrete"
+	/>
+<animate 
+	xlink:href="#footprint_manus_todo2_r"
+	attributeName="opacity"
+	attributeType="XML"
+	dur="4000ms" 
+	repeatCount="indefinite"
+	values="0.12; 0.12; 1; 1; 1"
+	keyTimes="0; 0.25; 0.5; 0.75; 1"
+	calcMode="discrete"
+	/>
+
+<animate 
+	xlink:href="#footprint_pes_todo3_r"
+	attributeName="opacity"
+	attributeType="XML"
+	dur="4000ms" 
+	repeatCount="indefinite"
+	values="0.12; 0.12; 0.12; 1; 1"
+	keyTimes="0; 0.25; 0.5; 0.75; 1"
+	calcMode="discrete"
+	/>
+<animate 
+	xlink:href="#footprint_manus_todo3_l"
+	attributeName="opacity"
+	attributeType="XML"
+	dur="4000ms" 
+	repeatCount="indefinite"
+	values="0.12; 0.12; 0.12; 1; 1"
+	keyTimes="0; 0.25; 0.5; 0.75; 1"
+	calcMode="discrete"
+	/>
+
+
+
+
+
+	<g id="footprints" transform="translate(81 61)">
+		<circle id="footprint_manus_todo5_l" cx="-48" cy="-295" r="7" stroke="rgb(130,130,130)" stroke-width="1" fill="rgb(150,150,150)" opacity="0.12"/>
+		<circle id="footprint_pes_todo6_l" cx="-32" cy="-257" r="9" stroke="rgb(130,130,130)" stroke-width="1" fill="rgb(150,150,150)" opacity="0.12"/>
+			<circle id="footprint_manus_todo4_r" cx="50" cy="-236" r="7" stroke="rgb(130,130,130)" stroke-width="1" fill="rgb(150,150,150)" opacity="0.12"/>
+			<circle id="footprint_pes_todo5_r" cx="48" cy="-198" r="9" stroke="rgb(130,130,130)" stroke-width="1" fill="rgb(150,150,150)" opacity="0.12"/>
+		<circle id="footprint_manus_todo3_l" cx="-34" cy="-177" r="7" stroke="rgb(130,130,130)" stroke-width="1" fill="rgb(150,150,150)" opacity="0.12"/>
+		<circle id="footprint_pes_todo4_l" cx="-30" cy="-140" r="9" stroke="rgb(130,130,130)" stroke-width="1" fill="rgb(150,150,150)" opacity="0.12"/>
+			<circle id="footprint_manus_todo2_r" cx="57" cy="-118" r="7" stroke="rgb(130,130,130)" stroke-width="1" fill="rgb(150,150,150)" opacity="0.12"/>
+			<circle id="footprint_pes_todo3_r" cx="53" cy="-80" r="9" stroke="rgb(130,130,130)" stroke-width="1" fill="rgb(150,150,150)" opacity="0.12"/>
+
+
+		<circle id="footprint_manus_todo1_l" cx="-48" cy="-59" r="7" stroke="rgb(130,130,130)" stroke-width="1" fill="rgb(150,150,150)" opacity="0.12"/>
+		<circle id="footprint_pes_todo2_l" cx="-32" cy="-21" r="9" stroke="rgb(130,130,130)" stroke-width="1" fill="rgb(150,150,150)" opacity="0.12"/>
+			<circle id="footprint_manus_0_r" cx="50" cy="0" r="7" stroke="rgb(130,130,130)" stroke-width="1" fill="rgb(150,150,150)" opacity="1"/>
+			<circle id="footprint_pes_todo1_r" cx="48" cy="38" r="9" stroke="rgb(130,130,130)" stroke-width="1" fill="rgb(150,150,150)" opacity="0.12"/>
+		<circle id="footprint_manus_0_l" cx="-34" cy="59" r="7" stroke="rgb(130,130,130)" stroke-width="1" fill="rgb(150,150,150)" opacity="1"/>
+		<circle id="footprint_pes_done0_l" cx="-30" cy="96" r="9" stroke="rgb(130,130,130)" stroke-width="1" fill="rgb(150,150,150)" opacity="1"/>
+			<circle id="footprint_manus_done1_r" cx="57" cy="118" r="7" stroke="rgb(130,130,130)" stroke-width="1" fill="rgb(150,150,150)" opacity="1"/>
+			<circle id="footprint_pes_done0_r" cx="53" cy="156" r="9" stroke="rgb(130,130,130)" stroke-width="1" fill="rgb(150,150,150)" opacity="1"/>
+		<circle id="footprint_manus_done2_l" cx="-48" cy="177" r="7" stroke="rgb(130,130,130)" stroke-width="1" fill="rgb(150,150,150)" opacity="1"/>
+		<circle id="footprint_pes_done1_l" cx="-32" cy="215" r="9" stroke="rgb(130,130,130)" stroke-width="1" fill="rgb(150,150,150)" opacity="1"/>
+			<circle id="footprint_manus_done3_r" cx="50" cy="236" r="7" stroke="rgb(130,130,130)" stroke-width="1" fill="rgb(150,150,150)" opacity="1"/>
+			<circle id="footprint_pes_done2_r" cx="48" cy="274" r="9" stroke="rgb(130,130,130)" stroke-width="1" fill="rgb(150,150,150)" opacity="1"/>
+	</g>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<defs>
+    <filter id="blurFilter2" y="-10" height="80" x="-10" width="40">
+        <feOffset in="SourceAlpha" dx="3" dy="3" result="offset2" />
+        <feGaussianBlur in="offset2" stdDeviation="3"  result="blur2"/>
+
+        <feMerge>
+            <feMergeNode in="blur2" />
+            <feMergeNode in="SourceGraphic" />
+        </feMerge>
+    </filter>
+</defs>
+
+<g transform="translate(91 -28)">
+<g transform="rotate(-3 0 156)" id="tetrapod" fill="#798550">
+
+	<g transform="translate(0 108)">
+		<path d="
+			M -49,9 L -36,8 Q 0,-20 36,8 L 49,9
+				L 50,5 L 51,7
+				L 53,4 L 54,7
+				L 57,4 L 57,8
+				L 60,6 L 59,10
+				L 62,9 L 60,13
+				L 62,13 L 60,15
+			Q 57,19 53,17
+				Q 36,25 25,19
+					Q 0,24 -25,19
+				Q -36,25 -53,17
+			Q -57,19 -60,15
+				L -62,13 L -60,13
+				L -62,9 L -59,10
+				L -60,6 L -57,8
+				L -57,4 L -54,7
+				L -53,4 L -51,7
+				L -50,5 L -49,9
+			" id="p_tetra_manus" stroke-width="0" transform="rotate(-31 0 10)" />
+	</g>
+
+	<g transform="translate(0 205)">
+		<path d="
+			M -51,4 L -42,6 Q -15,-4 0,5 Q 15,-4 42,6 L 51,4
+			L 55,2 L 54,5
+			L 59,4 L 57,8
+			L 62,8 L 59,11
+			L 63,14 L 58,15
+			L 60,19 L 55,19
+			L 55,21 L 50,20
+			Q 37,13 19,20 Q 0,29 -19,20 Q -37,13 -50,20
+			L -55,21 L -55,19
+			L -60,19 L -58,15
+			L -63,14 L -59,11
+			L -62,8 L -57,8
+			L -59,4 L -54,5
+			L -55,2 L -51,4		
+			" stroke-width="0" id="p_tetra_pes" transform="rotate(41 0 12)" />
+	</g>
+
+	<path d="
+		M 20,96
+		Q 40,170 2,260
+		Q -22,320 -8,350
+		Q -25,320 -18,260
+		Q -10,170 -20,96
+		Z
+		" stroke-width="0" id="p_tetra_body" transform="scale(0.95)" />
+
+
+
+	<g transform="scale(0.9) translate(0 7)">
+	<path d="M 0,104 Q -24,111 -24,100 Q 0,4 24,100 Q 24,111 0,104" stroke-width="0" transform="rotate(-10 0 100)" id="p_tetra_head"/>
+	</g>
+
+</g>
+</g>
+
+
+
+
+
+
+
+<animate 
+	xlink:href="#p_tetra_body"
+	attributeName="d"
+	attributeType="XML"
+	dur="4000ms" 
+	repeatCount="indefinite"
+	values="
+		M 20,96
+		Q 40,170 2,260
+		Q -22,320 -8,350
+		Q -25,320 -18,260
+		Q -10,170 -20,96
+		Z ;
+
+		M 20,96
+		Q 10,170 18,260
+		Q 25,320 8,350
+		Q 22,320 -2,260
+		Q -40,170 -20,96
+		Z ;
+
+		M 20,96
+		Q 40,170 2,260
+		Q -22,320 -8,350
+		Q -25,320 -18,260
+		Q -10,170 -20,96
+		Z ;
+
+		M 20,96
+		Q 10,170 18,260
+		Q 25,320 8,350
+		Q 22,320 -2,260
+		Q -40,170 -20,96
+		Z ;
+
+		M 20,96
+		Q 40,170 2,260
+		Q -22,320 -8,350
+		Q -25,320 -18,260
+		Q -10,170 -20,96
+		Z ;
+		"
+	keyTimes="0; 0.25; 0.5; 0.75; 1"
+	/>
+
+<animateTransform
+	xlink:href="#p_tetra_head"
+	attributeName="transform"
+	type="rotate"
+	dur="4000ms" 
+	repeatCount="indefinite"
+	values="
+		-15 0 100 ;
+		15 0 100 ;
+		-15 0 100 ;
+
+		15 0 100 ;
+		-15 0 100 ;
+		"
+	keyTimes="0; 0.25; 0.5; 0.75; 1"
+	/>
+
+<animateTransform
+	xlink:href="#p_tetra_pes"
+	attributeName="transform"
+	type="rotate"
+	dur="4000ms" 
+	repeatCount="indefinite"
+	values="
+		41 0 12 ;
+		-32.5 0 12 ;
+		30.5 0 12 ;
+		-40.5 0 12 ;
+		41 0 12 ;
+		"
+	keyTimes="0; 0.25; 0.5; 0.75; 1"
+	/>
+
+
+<animateTransform
+	xlink:href="#p_tetra_manus"
+	attributeName="transform"
+	type="rotate"
+	dur="4000ms" 
+	repeatCount="indefinite"
+	values="
+		-31 0 10 ;
+		32.5 0 10 ;
+		-32.5 0 10 ;
+		32.5 0 10 ;
+		-31 0 10 ;
+		"
+	keyTimes="0; 0.25; 0.5; 0.75; 1"
+	/>
+
+
+
+
+<animateTransform
+	xlink:href="#tetrapod"
+	attributeName="transform"
+	type="rotate"
+	dur="4000ms" 
+	repeatCount="indefinite"
+	values="
+		-3 0 156 ;
+		-3.5 0 250 ;
+		-0.5 0 700 ;
+		1.5 0 190 ;
+		-3 0 156 ;
+		"
+	keyTimes="0; 0.25; 0.5; 0.75; 1"
+	calcMode="paced"
+	/>
+
+
+
+
+</g><!-- END OF ANIMATED SECTION -->
+
+</svg>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!-- This is a basic example of svg's animation usage. Coded manually by User:WYKIWYC.-->
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" version="1.1" > <!-- Graphics area caracs-->
+	<title> SVG examples :  animateColor.</title> <!-- Exactly like in xHTML -->
+	
+	<circle cx='100' cy='100' r='50' style='stroke-width:3;stroke:black;fill:red' > 
+		<animateColor  attributeName="fill" attributeType="CSS" begin='0s' dur='5s' values='red; red; blue ; blue; red' repeatCount='indefinite' />
+	</circle>
+	
+</svg>

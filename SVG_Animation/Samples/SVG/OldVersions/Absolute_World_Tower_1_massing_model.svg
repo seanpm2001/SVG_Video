@@ -1,0 +1,464 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="-1280 -1220 2560 4480">
+ <title>Simplified plan and massing model of Absolute World Tower 1</title>
+ <desc>Simplified plan and massing model of Tower 1 of Absolute World residential condominium in Ontario, drawn by CMG Lee based on http://archello.com/en/project/absolute-towers-1 , http://peruarki.com/the-absolute-towers and http://openstreetmap.org/?lat=43.595;lon=-79.635;zoom=99 .</desc>
+ <style type="text/css">
+  @keyframes         rot { from { transform:         rotate(0deg);   }
+                           to   { transform:         rotate(360deg); } }
+  @-moz-keyframes    rot { from { -moz-transform:    rotate(0deg);   }
+                           to   { -moz-transform:    rotate(360deg); } }
+  @-webkit-keyframes rot { from { -webkit-transform: rotate(0deg);   }
+                           to   { -webkit-transform: rotate(360deg); } }
+  .rot { animation:         rot 60s linear infinite;
+         -moz-animation:    rot 60s linear infinite;
+         -webkit-animation: rot 60s linear infinite; }
+  @keyframes         hide { from { transform:         scale(0.0001); }
+                            to   { transform:         scale(0.0001); } }
+  @-moz-keyframes    hide { from { -moz-transform:    scale(0.0001); }
+                            to   { -moz-transform:    scale(0.0001); } }
+  @-webkit-keyframes hide { from { -webkit-transform: scale(0.0001); }
+                            to   { -webkit-transform: scale(0.0001); } }
+  .hide { animation:         hide 1s linear;
+          -moz-animation:    hide 1s linear;
+          -webkit-animation: hide 1s linear; }
+ </style>
+ <defs>
+  <radialGradient id="grad" cx="50%" cy="50%" r="70%" fx="50%" fy="50%">
+   <stop offset="70%"  stop-color="#66cc66" stop-opacity="1"/>
+   <stop offset="100%" stop-color="#66cc66" stop-opacity="0.25"/>
+  </radialGradient>
+
+  <path id="tick" d="M 0 0 V -5"/>
+  <g id="ticks">
+   <use xlink:href="#tick" transform="scale(1,2)"/>
+   <use xlink:href="#tick" transform="translate(10,0)"/>
+   <use xlink:href="#tick" transform="translate(20,0)"/>
+   <use xlink:href="#tick" transform="translate(30,0)"/>
+   <use xlink:href="#tick" transform="translate(40,0)"/>
+   <use xlink:href="#tick" transform="translate(50,0) scale(1,1.5)"/>
+   <use xlink:href="#tick" transform="translate(60,0)"/>
+   <use xlink:href="#tick" transform="translate(70,0)"/>
+   <use xlink:href="#tick" transform="translate(80,0)"/>
+   <use xlink:href="#tick" transform="translate(90,0)"/>
+   <use xlink:href="#tick" transform="translate(100,0) scale(1,2)"/>
+  </g>
+  <g id="scale" stroke="#000000">
+   <use xlink:href="#ticks"/>
+   <use xlink:href="#ticks" transform="translate(100,0)"/>
+   <path d="M 0 0 H 200"/>
+   <g font-size="20" letter-spacing="-2" stroke="none">
+    <text x="0"   y="-12">0 m</text>
+    <text x="50" y="-12">5 m</text>
+    <text x="100" y="-12">10 m</text>
+    <text x="150" y="-12">15 m</text>
+    <text x="200" y="-12">20 m</text>
+   </g>
+  </g>
+  <g id="north" stroke="#000000" fill="none">
+   <circle cx="0" cy="0" r="22"/>
+   <path d="M 0 20 V -20 L -20 0 H 20 L 0 -20 Z"/>
+  </g>
+  <use id="north_x5" xlink:href="#north" transform="scale(5,5) rotate(180)" stroke-width="2"/>
+
+  <g id="floor" transform="rotate(-18)">
+   <path d="M -150 0 C -150 130  -45 210  0 210 C 45 210  150 130  150 0 C 150 -130  45 -210  0 -210 C -45 -210  -150 -130  -150 0" fill="#66ccff" stroke="#000000" fill-opacity="1"/>
+   <path d="M -137 0 C -137 90  -75 186  0 186 C 75 186  137 90  137 0 C 137 -90  75 -186  0 -186 C -75 -186  -137 -90  -137 0" stroke="none" fill="#3399cc" fill-opacity="1"/>
+   <g stroke="#000000" stroke-opacity="0.5">
+    <g stroke-dasharray="2,2,8,2">
+     <path d="M 0 0 V -205"/>
+     <path d="M 0 0 V 205"/>
+     <path d="M 0 0 H 145"/>
+     <path d="M 0 0 H -145"/>
+    </g>
+    <path d="M 0 -210 V -250"/>
+   </g>
+   <path d="M -7 -250 l 7 -20 l 7 20"/>
+  </g>
+  <g id="plan" stroke-width="2">
+   <use xlink:href="#scale" transform="translate(80,-270)"/>
+   <use xlink:href="#north" transform="translate(180,-230)"/>
+   <rect id="ground" transform="rotate(46)" x="-220" y="-220" width="440" height="440" rx="20" ry="20" stroke="none" fill="url(#grad)"/>
+   <g transform="rotate(180)" stroke="none" fill-opacity="0.5">
+    <use id="floor_1"  xlink:href="#floor" transform="rotate(-10)"/>
+    <use id="floor_2"  xlink:href="#floor" transform="rotate(-9)"/>
+    <use id="floor_3"  xlink:href="#floor" transform="rotate(-8)"/>
+    <use id="floor_4"  xlink:href="#floor" transform="rotate(-7)"/>
+    <use id="floor_5"  xlink:href="#floor" transform="rotate(-6)"/>
+    <use id="floor_6"  xlink:href="#floor" transform="rotate(-5)"/>
+    <use id="floor_7"  xlink:href="#floor" transform="rotate(-4)"/>
+    <use id="floor_8"  xlink:href="#floor" transform="rotate(-3)"/>
+    <use id="floor_9"  xlink:href="#floor" transform="rotate(-2)"/>
+    <use id="floor_10" xlink:href="#floor" transform="rotate(0)"/>
+    <use id="floor_11" xlink:href="#floor" transform="rotate(3)"/>
+    <use id="floor_12" xlink:href="#floor" transform="rotate(6)"/>
+    <use id="floor_13" xlink:href="#floor" transform="rotate(9)"/>
+    <use id="floor_14" xlink:href="#floor" transform="rotate(12)"/>
+    <use id="floor_15" xlink:href="#floor" transform="rotate(15)"/>
+    <use id="floor_16" xlink:href="#floor" transform="rotate(18)"/>
+    <use id="floor_17" xlink:href="#floor" transform="rotate(21)"/>
+    <use id="floor_18" xlink:href="#floor" transform="rotate(24)"/>
+    <use id="floor_19" xlink:href="#floor" transform="rotate(27)"/>
+    <use id="floor_20" xlink:href="#floor" transform="rotate(30)"/>
+    <use id="floor_21" xlink:href="#floor" transform="rotate(33)"/>
+    <use id="floor_22" xlink:href="#floor" transform="rotate(36)"/>
+    <use id="floor_23" xlink:href="#floor" transform="rotate(39)"/>
+    <use id="floor_24" xlink:href="#floor" transform="rotate(42)"/>
+    <use id="floor_25" xlink:href="#floor" transform="rotate(45)"/>
+    <use id="floor_26" xlink:href="#floor" transform="rotate(50)"/>
+    <use id="floor_27" xlink:href="#floor" transform="rotate(58)"/>
+    <use id="floor_28" xlink:href="#floor" transform="rotate(66)"/>
+    <use id="floor_29" xlink:href="#floor" transform="rotate(74)"/>
+    <use id="floor_30" xlink:href="#floor" transform="rotate(82)"/>
+    <use id="floor_31" xlink:href="#floor" transform="rotate(90)"/>
+    <use id="floor_32" xlink:href="#floor" transform="rotate(98)"/>
+    <use id="floor_33" xlink:href="#floor" transform="rotate(106)"/>
+    <use id="floor_34" xlink:href="#floor" transform="rotate(114)"/>
+    <use id="floor_35" xlink:href="#floor" transform="rotate(122)"/>
+    <use id="floor_36" xlink:href="#floor" transform="rotate(130)"/>
+    <use id="floor_37" xlink:href="#floor" transform="rotate(138)"/>
+    <use id="floor_38" xlink:href="#floor" transform="rotate(146)"/>
+    <use id="floor_39" xlink:href="#floor" transform="rotate(154)"/>
+    <use id="floor_40" xlink:href="#floor" transform="rotate(159)"/>
+    <use id="floor_41" xlink:href="#floor" transform="rotate(162)"/>
+    <use id="floor_42" xlink:href="#floor" transform="rotate(165)"/>
+    <use id="floor_43" xlink:href="#floor" transform="rotate(168)"/>
+    <use id="floor_44" xlink:href="#floor" transform="rotate(171)"/>
+    <use id="floor_45" xlink:href="#floor" transform="rotate(174)"/>
+    <use id="floor_46" xlink:href="#floor" transform="rotate(177)"/>
+    <use id="floor_47" xlink:href="#floor" transform="rotate(180)"/>
+    <use id="floor_48" xlink:href="#floor" transform="rotate(183)"/>
+    <use id="floor_49" xlink:href="#floor" transform="rotate(186)"/>
+    <use id="floor_50" xlink:href="#floor" transform="rotate(189)"/>
+    <use id="floor_51" xlink:href="#floor" transform="rotate(192)"/>
+    <use id="floor_52" xlink:href="#floor" transform="rotate(194)"/>
+    <use id="floor_53" xlink:href="#floor" transform="rotate(195)"/>
+    <use id="floor_54" xlink:href="#floor" transform="rotate(196)"/>
+    <use id="floor_55" xlink:href="#floor" transform="rotate(197)"/>
+    <use id="floor_56" xlink:href="#floor" transform="rotate(198)"/>
+   </g>
+  </g>
+  <g id="rots">
+   <use id="rot_n"  xlink:href="#north_x5" class="rot"/>
+   <use id="rot_g"  xlink:href="#ground"   class="rot"/>
+   <use id="rot_1"  xlink:href="#floor_1"  class="rot"/>
+   <use id="rot_2"  xlink:href="#floor_2"  class="rot"/>
+   <use id="rot_3"  xlink:href="#floor_3"  class="rot"/>
+   <use id="rot_4"  xlink:href="#floor_4"  class="rot"/>
+   <use id="rot_5"  xlink:href="#floor_5"  class="rot"/>
+   <use id="rot_6"  xlink:href="#floor_6"  class="rot"/>
+   <use id="rot_7"  xlink:href="#floor_7"  class="rot"/>
+   <use id="rot_8"  xlink:href="#floor_8"  class="rot"/>
+   <use id="rot_9"  xlink:href="#floor_9"  class="rot"/>
+   <use id="rot_10" xlink:href="#floor_10" class="rot"/>
+   <use id="rot_11" xlink:href="#floor_11" class="rot"/>
+   <use id="rot_12" xlink:href="#floor_12" class="rot"/>
+   <use id="rot_13" xlink:href="#floor_13" class="rot"/>
+   <use id="rot_14" xlink:href="#floor_14" class="rot"/>
+   <use id="rot_15" xlink:href="#floor_15" class="rot"/>
+   <use id="rot_16" xlink:href="#floor_16" class="rot"/>
+   <use id="rot_17" xlink:href="#floor_17" class="rot"/>
+   <use id="rot_18" xlink:href="#floor_18" class="rot"/>
+   <use id="rot_19" xlink:href="#floor_19" class="rot"/>
+   <use id="rot_20" xlink:href="#floor_20" class="rot"/>
+   <use id="rot_21" xlink:href="#floor_21" class="rot"/>
+   <use id="rot_22" xlink:href="#floor_22" class="rot"/>
+   <use id="rot_23" xlink:href="#floor_23" class="rot"/>
+   <use id="rot_24" xlink:href="#floor_24" class="rot"/>
+   <use id="rot_25" xlink:href="#floor_25" class="rot"/>
+   <use id="rot_26" xlink:href="#floor_26" class="rot"/>
+   <use id="rot_27" xlink:href="#floor_27" class="rot"/>
+   <use id="rot_28" xlink:href="#floor_28" class="rot"/>
+   <use id="rot_29" xlink:href="#floor_29" class="rot"/>
+   <use id="rot_30" xlink:href="#floor_30" class="rot"/>
+   <use id="rot_31" xlink:href="#floor_31" class="rot"/>
+   <use id="rot_32" xlink:href="#floor_32" class="rot"/>
+   <use id="rot_33" xlink:href="#floor_33" class="rot"/>
+   <use id="rot_34" xlink:href="#floor_34" class="rot"/>
+   <use id="rot_35" xlink:href="#floor_35" class="rot"/>
+   <use id="rot_36" xlink:href="#floor_36" class="rot"/>
+   <use id="rot_37" xlink:href="#floor_37" class="rot"/>
+   <use id="rot_38" xlink:href="#floor_38" class="rot"/>
+   <use id="rot_39" xlink:href="#floor_39" class="rot"/>
+   <use id="rot_40" xlink:href="#floor_40" class="rot"/>
+   <use id="rot_41" xlink:href="#floor_41" class="rot"/>
+   <use id="rot_42" xlink:href="#floor_42" class="rot"/>
+   <use id="rot_43" xlink:href="#floor_43" class="rot"/>
+   <use id="rot_44" xlink:href="#floor_44" class="rot"/>
+   <use id="rot_45" xlink:href="#floor_45" class="rot"/>
+   <use id="rot_46" xlink:href="#floor_46" class="rot"/>
+   <use id="rot_47" xlink:href="#floor_47" class="rot"/>
+   <use id="rot_48" xlink:href="#floor_48" class="rot"/>
+   <use id="rot_49" xlink:href="#floor_49" class="rot"/>
+   <use id="rot_50" xlink:href="#floor_50" class="rot"/>
+   <use id="rot_51" xlink:href="#floor_51" class="rot"/>
+   <use id="rot_52" xlink:href="#floor_52" class="rot"/>
+   <use id="rot_53" xlink:href="#floor_53" class="rot"/>
+   <use id="rot_54" xlink:href="#floor_54" class="rot"/>
+   <use id="rot_55" xlink:href="#floor_55" class="rot"/>
+   <use id="rot_56" xlink:href="#floor_56" class="rot"/>
+  </g>
+  <g id="dimetric_n">
+   <g transform="translate(0,350)" stroke="none">
+    <text x="0" y="0"  >View from</text>
+    <text x="0" y="100">north/south</text>
+   </g>
+   <use xlink:href="#north_x5" transform="translate(0,  200) scale(1,0.5)"/>
+   <use xlink:href="#ground"   transform="translate(0,    0) scale(1,0.5)"/>
+   <use xlink:href="#floor_1"  transform="translate(0,    0) scale(1,0.5)"/>
+   <use xlink:href="#floor_2"  transform="translate(0,  -30) scale(1,0.5)"/>
+   <use xlink:href="#floor_3"  transform="translate(0,  -60) scale(1,0.5)"/>
+   <use xlink:href="#floor_4"  transform="translate(0,  -90) scale(1,0.5)"/>
+   <use xlink:href="#floor_5"  transform="translate(0, -120) scale(1,0.5)"/>
+   <use xlink:href="#floor_6"  transform="translate(0, -150) scale(1,0.5)"/>
+   <use xlink:href="#floor_7"  transform="translate(0, -180) scale(1,0.5)"/>
+   <use xlink:href="#floor_8"  transform="translate(0, -210) scale(1,0.5)"/>
+   <use xlink:href="#floor_9"  transform="translate(0, -240) scale(1,0.5)"/>
+   <use xlink:href="#floor_10" transform="translate(0, -270) scale(1,0.5)"/>
+   <use xlink:href="#floor_11" transform="translate(0, -300) scale(1,0.5)"/>
+   <use xlink:href="#floor_12" transform="translate(0, -330) scale(1,0.5)"/>
+   <use xlink:href="#floor_13" transform="translate(0, -360) scale(1,0.5)"/>
+   <use xlink:href="#floor_14" transform="translate(0, -390) scale(1,0.5)"/>
+   <use xlink:href="#floor_15" transform="translate(0, -420) scale(1,0.5)"/>
+   <use xlink:href="#floor_16" transform="translate(0, -450) scale(1,0.5)"/>
+   <use xlink:href="#floor_17" transform="translate(0, -480) scale(1,0.5)"/>
+   <use xlink:href="#floor_18" transform="translate(0, -510) scale(1,0.5)"/>
+   <use xlink:href="#floor_19" transform="translate(0, -540) scale(1,0.5)"/>
+   <use xlink:href="#floor_20" transform="translate(0, -570) scale(1,0.5)"/>
+   <use xlink:href="#floor_21" transform="translate(0, -600) scale(1,0.5)"/>
+   <use xlink:href="#floor_22" transform="translate(0, -630) scale(1,0.5)"/>
+   <use xlink:href="#floor_23" transform="translate(0, -660) scale(1,0.5)"/>
+   <use xlink:href="#floor_24" transform="translate(0, -690) scale(1,0.5)"/>
+   <use xlink:href="#floor_25" transform="translate(0, -720) scale(1,0.5)"/>
+   <use xlink:href="#floor_26" transform="translate(0, -750) scale(1,0.5)"/>
+   <use xlink:href="#floor_27" transform="translate(0, -780) scale(1,0.5)"/>
+   <use xlink:href="#floor_28" transform="translate(0, -810) scale(1,0.5)"/>
+   <use xlink:href="#floor_29" transform="translate(0, -840) scale(1,0.5)"/>
+   <use xlink:href="#floor_30" transform="translate(0, -870) scale(1,0.5)"/>
+   <use xlink:href="#floor_31" transform="translate(0, -900) scale(1,0.5)"/>
+   <use xlink:href="#floor_32" transform="translate(0, -930) scale(1,0.5)"/>
+   <use xlink:href="#floor_33" transform="translate(0, -960) scale(1,0.5)"/>
+   <use xlink:href="#floor_34" transform="translate(0, -990) scale(1,0.5)"/>
+   <use xlink:href="#floor_35" transform="translate(0,-1020) scale(1,0.5)"/>
+   <use xlink:href="#floor_36" transform="translate(0,-1050) scale(1,0.5)"/>
+   <use xlink:href="#floor_37" transform="translate(0,-1080) scale(1,0.5)"/>
+   <use xlink:href="#floor_38" transform="translate(0,-1110) scale(1,0.5)"/>
+   <use xlink:href="#floor_39" transform="translate(0,-1140) scale(1,0.5)"/>
+   <use xlink:href="#floor_40" transform="translate(0,-1170) scale(1,0.5)"/>
+   <use xlink:href="#floor_41" transform="translate(0,-1200) scale(1,0.5)"/>
+   <use xlink:href="#floor_42" transform="translate(0,-1230) scale(1,0.5)"/>
+   <use xlink:href="#floor_43" transform="translate(0,-1260) scale(1,0.5)"/>
+   <use xlink:href="#floor_44" transform="translate(0,-1290) scale(1,0.5)"/>
+   <use xlink:href="#floor_45" transform="translate(0,-1320) scale(1,0.5)"/>
+   <use xlink:href="#floor_46" transform="translate(0,-1350) scale(1,0.5)"/>
+   <use xlink:href="#floor_47" transform="translate(0,-1380) scale(1,0.5)"/>
+   <use xlink:href="#floor_48" transform="translate(0,-1410) scale(1,0.5)"/>
+   <use xlink:href="#floor_49" transform="translate(0,-1440) scale(1,0.5)"/>
+   <use xlink:href="#floor_50" transform="translate(0,-1470) scale(1,0.5)"/>
+   <use xlink:href="#floor_51" transform="translate(0,-1500) scale(1,0.5)"/>
+   <use xlink:href="#floor_52" transform="translate(0,-1530) scale(1,0.5)"/>
+   <use xlink:href="#floor_53" transform="translate(0,-1560) scale(1,0.5)"/>
+   <use xlink:href="#floor_54" transform="translate(0,-1590) scale(1,0.5)"/>
+   <use xlink:href="#floor_55" transform="translate(0,-1620) scale(1,0.5)"/>
+   <use xlink:href="#floor_56" transform="translate(0,-1650) scale(1,0.5)"/>
+  </g>
+  <g id="dimetric_ne">
+   <g transform="translate(0,350)" stroke="none">
+    <text x="0" y="0"  >View from</text>
+    <text x="0" y="100">NE/SW</text>
+   </g>
+   <use xlink:href="#north_x5" transform="translate(0,  200) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#ground"   transform="translate(0,    0) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_1"  transform="translate(0,    0) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_2"  transform="translate(0,  -30) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_3"  transform="translate(0,  -60) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_4"  transform="translate(0,  -90) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_5"  transform="translate(0, -120) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_6"  transform="translate(0, -150) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_7"  transform="translate(0, -180) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_8"  transform="translate(0, -210) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_9"  transform="translate(0, -240) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_10" transform="translate(0, -270) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_11" transform="translate(0, -300) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_12" transform="translate(0, -330) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_13" transform="translate(0, -360) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_14" transform="translate(0, -390) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_15" transform="translate(0, -420) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_16" transform="translate(0, -450) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_17" transform="translate(0, -480) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_18" transform="translate(0, -510) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_19" transform="translate(0, -540) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_20" transform="translate(0, -570) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_21" transform="translate(0, -600) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_22" transform="translate(0, -630) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_23" transform="translate(0, -660) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_24" transform="translate(0, -690) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_25" transform="translate(0, -720) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_26" transform="translate(0, -750) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_27" transform="translate(0, -780) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_28" transform="translate(0, -810) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_29" transform="translate(0, -840) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_30" transform="translate(0, -870) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_31" transform="translate(0, -900) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_32" transform="translate(0, -930) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_33" transform="translate(0, -960) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_34" transform="translate(0, -990) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_35" transform="translate(0,-1020) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_36" transform="translate(0,-1050) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_37" transform="translate(0,-1080) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_38" transform="translate(0,-1110) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_39" transform="translate(0,-1140) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_40" transform="translate(0,-1170) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_41" transform="translate(0,-1200) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_42" transform="translate(0,-1230) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_43" transform="translate(0,-1260) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_44" transform="translate(0,-1290) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_45" transform="translate(0,-1320) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_46" transform="translate(0,-1350) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_47" transform="translate(0,-1380) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_48" transform="translate(0,-1410) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_49" transform="translate(0,-1440) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_50" transform="translate(0,-1470) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_51" transform="translate(0,-1500) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_52" transform="translate(0,-1530) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_53" transform="translate(0,-1560) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_54" transform="translate(0,-1590) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_55" transform="translate(0,-1620) scale(1,0.5) rotate(-45)"/>
+   <use xlink:href="#floor_56" transform="translate(0,-1650) scale(1,0.5) rotate(-45)"/>
+  </g>
+  <g id="dimetric_e">
+   <g transform="translate(0,350)" stroke="none">
+    <text x="0" y="0"  >View from</text>
+    <text x="0" y="100">east/west</text>
+   </g>
+   <use xlink:href="#north_x5" transform="translate(0,  200) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#ground"   transform="translate(0,    0) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_1"  transform="translate(0,    0) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_2"  transform="translate(0,  -30) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_3"  transform="translate(0,  -60) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_4"  transform="translate(0,  -90) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_5"  transform="translate(0, -120) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_6"  transform="translate(0, -150) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_7"  transform="translate(0, -180) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_8"  transform="translate(0, -210) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_9"  transform="translate(0, -240) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_10" transform="translate(0, -270) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_11" transform="translate(0, -300) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_12" transform="translate(0, -330) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_13" transform="translate(0, -360) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_14" transform="translate(0, -390) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_15" transform="translate(0, -420) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_16" transform="translate(0, -450) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_17" transform="translate(0, -480) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_18" transform="translate(0, -510) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_19" transform="translate(0, -540) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_20" transform="translate(0, -570) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_21" transform="translate(0, -600) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_22" transform="translate(0, -630) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_23" transform="translate(0, -660) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_24" transform="translate(0, -690) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_25" transform="translate(0, -720) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_26" transform="translate(0, -750) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_27" transform="translate(0, -780) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_28" transform="translate(0, -810) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_29" transform="translate(0, -840) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_30" transform="translate(0, -870) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_31" transform="translate(0, -900) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_32" transform="translate(0, -930) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_33" transform="translate(0, -960) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_34" transform="translate(0, -990) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_35" transform="translate(0,-1020) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_36" transform="translate(0,-1050) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_37" transform="translate(0,-1080) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_38" transform="translate(0,-1110) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_39" transform="translate(0,-1140) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_40" transform="translate(0,-1170) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_41" transform="translate(0,-1200) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_42" transform="translate(0,-1230) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_43" transform="translate(0,-1260) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_44" transform="translate(0,-1290) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_45" transform="translate(0,-1320) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_46" transform="translate(0,-1350) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_47" transform="translate(0,-1380) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_48" transform="translate(0,-1410) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_49" transform="translate(0,-1440) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_50" transform="translate(0,-1470) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_51" transform="translate(0,-1500) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_52" transform="translate(0,-1530) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_53" transform="translate(0,-1560) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_54" transform="translate(0,-1590) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_55" transform="translate(0,-1620) scale(1,0.5) rotate(-90)"/>
+   <use xlink:href="#floor_56" transform="translate(0,-1650) scale(1,0.5) rotate(-90)"/>
+  </g>
+  <g id="dimetric_se">
+   <g transform="translate(0,350)" stroke="none" class="hide">
+    <text x="0" y="0"  >View from</text>
+    <text x="0" y="100">SE/NW</text>
+   </g>
+   <use xlink:href="#rot_n"  transform="translate(0,  200) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_g"  transform="translate(0,    0) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_1"  transform="translate(0,    0) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_2"  transform="translate(0,  -30) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_3"  transform="translate(0,  -60) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_4"  transform="translate(0,  -90) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_5"  transform="translate(0, -120) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_6"  transform="translate(0, -150) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_7"  transform="translate(0, -180) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_8"  transform="translate(0, -210) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_9"  transform="translate(0, -240) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_10" transform="translate(0, -270) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_11" transform="translate(0, -300) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_12" transform="translate(0, -330) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_13" transform="translate(0, -360) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_14" transform="translate(0, -390) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_15" transform="translate(0, -420) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_16" transform="translate(0, -450) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_17" transform="translate(0, -480) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_18" transform="translate(0, -510) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_19" transform="translate(0, -540) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_20" transform="translate(0, -570) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_21" transform="translate(0, -600) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_22" transform="translate(0, -630) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_23" transform="translate(0, -660) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_24" transform="translate(0, -690) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_25" transform="translate(0, -720) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_26" transform="translate(0, -750) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_27" transform="translate(0, -780) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_28" transform="translate(0, -810) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_29" transform="translate(0, -840) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_30" transform="translate(0, -870) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_31" transform="translate(0, -900) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_32" transform="translate(0, -930) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_33" transform="translate(0, -960) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_34" transform="translate(0, -990) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_35" transform="translate(0,-1020) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_36" transform="translate(0,-1050) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_37" transform="translate(0,-1080) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_38" transform="translate(0,-1110) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_39" transform="translate(0,-1140) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_40" transform="translate(0,-1170) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_41" transform="translate(0,-1200) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_42" transform="translate(0,-1230) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_43" transform="translate(0,-1260) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_44" transform="translate(0,-1290) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_45" transform="translate(0,-1320) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_46" transform="translate(0,-1350) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_47" transform="translate(0,-1380) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_48" transform="translate(0,-1410) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_49" transform="translate(0,-1440) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_50" transform="translate(0,-1470) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_51" transform="translate(0,-1500) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_52" transform="translate(0,-1530) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_53" transform="translate(0,-1560) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_54" transform="translate(0,-1590) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_55" transform="translate(0,-1620) scale(1,0.5) rotate(-135)"/>
+   <use xlink:href="#rot_56" transform="translate(0,-1650) scale(1,0.5) rotate(-135)"/>
+  </g>
+ </defs>
+ <g font-family="sans-serif" letter-spacing="-5" font-size="120" text-anchor="middle" stroke="#000000" stroke-width="5" stroke-linejoin="round" fill="#000000">
+  <use xlink:href="#plan" transform="scale(4,4)"/>
+  <use xlink:href="#dimetric_n"  transform="translate(-950,2800)"/>
+  <use xlink:href="#dimetric_ne" transform="translate(-320,2800)"/>
+  <use xlink:href="#dimetric_e"  transform="translate(350,2800)"/>
+  <use xlink:href="#dimetric_se" transform="translate(1000,2800)"/>
+ </g>
+</svg>

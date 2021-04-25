@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="-234 -234 1888 531">
+ <title>Aristotle wheel paradox</title>
+ <desc>CSS animation of Aristotle's wheel paradox by CMG Lee. A wheel comprises two concentric circles. The outer one has twice the radius of the inner one and rolls on the lower track. Both circles and tracks are marked with segments of equal length. The inner circle is observed to slip with respect to its track.</desc>
+ <style type="text/css">
+.dash { stroke:#ffcc00; stroke-dasharray:71,71; stroke-width:199; }
+@keyframes move         {  10% { transform:         translate(   0px,0px); }
+                           90% { transform:         translate(1420px,0px); }
+                          100% { transform:         translate(1420px,0px); } }
+@-moz-keyframes move    {  10% { -moz-transform:    translate(   0px,0px); }
+                           90% { -moz-transform:    translate(1420px,0px); }
+                          100% { -moz-transform:    translate(1420px,0px); } }
+@-webkit-keyframes move {  10% { -webkit-transform: translate(   0px,0px); }
+                           90% { -webkit-transform: translate(1420px,0px); }
+                          100% { -webkit-transform: translate(1420px,0px); } }
+.move { animation:         move 10s linear infinite alternate;
+        -moz-animation:    move 10s linear infinite alternate;
+        -webkit-animation: move 10s linear infinite alternate; }
+@keyframes rot          {  10% { transform:         rotate(  0deg); }
+                           90% { transform:         rotate(360deg); }
+                          100% { transform:         rotate(360deg); } }
+@-moz-keyframes rot     {  10% { -moz-transform:    rotate(  0deg); }
+                           90% { -moz-transform:    rotate(360deg); }
+                          100% { -moz-transform:    rotate(360deg); } }
+@-webkit-keyframes rot  {  10% { -webkit-transform: rotate(  0deg); }
+                           90% { -webkit-transform: rotate(360deg); }
+                          100% { -webkit-transform: rotate(360deg); } }
+.rot { animation:         rot 10s linear infinite alternate;
+       -moz-animation:    rot 10s linear infinite alternate;
+       -webkit-animation: rot 10s linear infinite alternate; }
+ </style>
+ <linearGradient id="grad_fade_l" x1="0%" y1="0%" x2="0%" y2="100%">
+  <stop offset="10%" stop-color="#ffffff"/>
+  <stop offset="90%" stop-color="#000000"/>
+ </linearGradient>
+ <radialGradient id="grad_fade_r1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+  <stop offset="50%" stop-color="#000000"/>
+  <stop offset="99%" stop-color="#ffffff"/>
+ </radialGradient>
+ <radialGradient id="grad_fade_r2" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+  <stop offset="70%" stop-color="#000000"/>
+  <stop offset="99%" stop-color="#ffffff"/>
+ </radialGradient>
+ <defs>
+ </defs>
+ <circle cx="0" cy="0" r="99999" fill="#ffffff"/>
+ <g fill="#000000" stroke="#000000">
+  <g class="move">
+   <g class="rot">
+    <g stroke="#eeeeee" stroke-width="4">
+     <path id="radius" d="M 0,0 V -226"/>
+     <use xlink:href="#radius" transform="rotate( 36)"/>
+     <use xlink:href="#radius" transform="rotate( 72)"/>
+     <use xlink:href="#radius" transform="rotate(108)"/>
+     <use xlink:href="#radius" transform="rotate(144)"/>
+     <use xlink:href="#radius" transform="rotate(216)"/>
+     <use xlink:href="#radius" transform="rotate(252)"/>
+     <use xlink:href="#radius" transform="rotate(288)"/>
+     <use xlink:href="#radius" transform="rotate(324)"/>
+     <use xlink:href="#radius" transform="rotate(180)" stroke="#ff0000" stroke-linecap="round"/>
+    </g>
+    <mask id="mask2"><use xlink:href="#circle2" fill="url(#grad_fade_r2)"/></mask>
+    <mask id="mask1"><use xlink:href="#circle1" fill="url(#grad_fade_r1)"/></mask>
+    <g transform="rotate(90) scale(1,-1)">
+     <g mask="url(#mask2)"><circle id="circle2" cx="0" cy="0" r="226"/><use class="dash" xlink:href="#circle2"/></g>
+     <g mask="url(#mask1)"><circle id="circle1" cx="0" cy="0" r="113"/><use class="dash" xlink:href="#circle1"/></g>
+    </g>
+   </g>
+  </g>
+  <mask id="mask0"><rect x="0" y="0" width="1420" height="50" fill="url(#grad_fade_l)"/></mask>
+  <g id="line" mask="url(#mask0)" transform="translate(0,113)">
+   <path id="line0" d="M 0,0 H 9999 V 999" stroke-width="199"/><!-- mask doesn't work on a line -->
+   <use class="dash" xlink:href="#line0"/>
+  </g>
+  <use xlink:href="#line" transform="translate(0,113)"/>
+ </g>
+</svg>

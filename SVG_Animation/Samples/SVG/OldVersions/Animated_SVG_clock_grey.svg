@@ -1,0 +1,213 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  viewBox="-500 -500 1000 1000" version="1.1"
+  >
+  <style type="text/css">
+    <![CDATA[
+    #shand {fill:LightSteelBlue ;stroke:#333 ;}
+    #mhand {fill:LightSlateGray;stroke:#333 ;}
+    #hhand {fill:#666;stroke:#333 ;}
+    .slowfo {fill:lime;stroke:DarkSlateGray ;}
+    .sitext { fill: #666}
+    text { font-size: 30}
+  ]]>
+  </style>
+  <defs>
+    <radialGradient id="rg1">
+      <stop offset="0%" stop-color="#aaa" />
+      <stop offset="100%" stop-color="#333" />
+    </radialGradient>
+    <line id="li" y1="98" y2="116" stroke="#999" stroke-width="5" />
+    <line id="t" y1="103" y2="116" stroke="#aaa" stroke-width="3" />
+    <g id="m">
+      <use xlink:href="#li" />
+      <use xlink:href="#t" transform="rotate(6)" />
+      <use xlink:href="#t" transform="rotate(12)" />
+      <use xlink:href="#t" transform="rotate(18)" />
+      <use xlink:href="#t" transform="rotate(24)" />
+    </g>
+    <g id="n">
+      <use xlink:href="#m" />
+      <use xlink:href="#m" transform="rotate(30)" />
+      <use xlink:href="#m" transform="rotate(60)" />
+    </g>
+    <linearGradient id="lg" x1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#333" />
+      <stop offset="1" stop-color="#aaa"  />
+    </linearGradient>
+    <!-- Gradient fuer den auesseren Rahmen -->
+    <linearGradient id="lgb" x1="0" x2="1" y2="1" >
+      <stop offset="0" stop-color="#aaa" />
+      <stop offset="1" stop-color="#333" />
+    </linearGradient>
+    <!-- Gradient fuer das Kreisinnere -->
+    <linearGradient id="l2" x1="1" x2="0" y1="1" y2="0" >
+      <stop offset="0" stop-color="#333" />
+      <stop offset="1" stop-color="#aaa"  />
+    </linearGradient>
+    <g id="button" transform="scale(0.3)" >
+      <circle r="100" fill="url(#lg)" transform="rotate(135)"
+   stroke="url(#lgb)" stroke-width="6"/>
+      <circle r="80" fill="url(#lg)" transform="rotate(315)"
+   stroke="none" />
+    </g>
+  </defs>
+  <g transform="scale(3.9)">
+    <use xlink:href="#n" />
+    <use xlink:href="#n" transform="rotate(90)" />
+    <use xlink:href="#n" transform="rotate(180)" />
+    <use xlink:href="#n" transform="rotate(270)" />
+  </g>
+  <g id="hhand" opacity="1" transform="rotate(0)">
+    <path transform="scale(1.8) rotate(0)" d="m-20 0 L0 40 20 0 0 -170 z" stroke-width="0.5" >
+      <desc>Stundenzeiger hour hands </desc>
+    </path>
+    <animateTransform attributeName="transform"
+    type="rotate" values="0; 360 "
+    repeatDur="indefinite" dur="43200s"
+    additive="sum" fill="freeze" />
+    <animateTransform attributeName="transform"
+    type="rotate" values="0;360"
+    begin="slf.click;" end="reset.click;freeze.click;set.click;ff.click;fb.click;slb.click;"
+    repeatDur="indefinite" dur="720s"
+    additive="sum" fill="freeze" />
+    <animateTransform attributeName="transform"
+    type="rotate" values="0;360"
+    begin="ff.click;" end="reset.click;freeze.click;set.click;slf.click;fb.click;slb.click;"
+    repeatDur="indefinite" dur="72s"
+    additive="sum" fill="freeze" />
+    <animateTransform attributeName="transform"
+    type="rotate" values="0;-360"
+    begin="slb.click;" end="reset.click;freeze.click;set.click;ff.click;fb.click;slf.click;"
+    repeatDur="indefinite" dur="720s"
+    additive="sum" fill="freeze" />
+    <animateTransform attributeName="transform"
+    type="rotate" values="0;-360"
+    begin="fb.click;" end="reset.click;freeze.click;set.click;ff.click;slb.click;slb.click;"
+    repeatDur="indefinite" dur="72s"
+    additive="sum" fill="freeze" />
+    <animateTransform attributeName="transform"
+    type="rotate" values="0;360"
+    begin="reset.click;" end="freeze.click"
+    repeatDur="indefinite" dur="43200s"
+    additive="replace" fill="freeze" />
+  </g>
+  <g id="mhand" opacity="1" transform="rotate(0)">
+    <path transform="scale(1.8)" d="M-20 0 L0 40 20 0 0 -200 z" stroke-width="0.5" >
+      <desc> Minutenzeiger minute hands </desc>
+    </path>
+    <animateTransform attributeName="transform"
+    type="rotate" values="0; 360 "
+    repeatDur="indefinite" dur="3600s"
+    additive="sum" fill="freeze" />
+    <animateTransform attributeName="transform"
+    type="rotate" values="0;360"
+    begin="slf.click;" end="reset.click;freeze.click;set.click;ff.click;fb.click;slb.click;"
+    repeatDur="indefinite" dur="60s"
+    additive="sum" fill="freeze" />
+    <animateTransform attributeName="transform"
+    type="rotate" values="0;360"
+    begin="ff.click;" end="reset.click;freeze.click;set.click;slf.click;fb.click;slb.click;"
+    repeatDur="indefinite" dur="6s"
+    additive="sum" fill="freeze" />
+    <animateTransform attributeName="transform"
+    type="rotate" values="0;-360"
+    begin="slb.click;" end="reset.click;freeze.click;set.click;ff.click;fb.click;slf.click;"
+    repeatDur="indefinite" dur="60s"
+    additive="sum" fill="freeze" />
+    <animateTransform attributeName="transform"
+    type="rotate" values="0;-360"
+    begin="fb.click;" end="reset.click;freeze.click;set.click;ff.click;slb.click;slb.click;"
+    repeatDur="indefinite" dur="6s"
+    additive="sum" fill="freeze" />
+    <animateTransform attributeName="transform"
+    type="rotate" values="0;360"
+    begin="reset.click;" end="freeze.click"
+    repeatDur="indefinite" dur="3600s"
+    additive="replace" fill="freeze" />
+  </g>
+  <g id="shand" opacity="1" transform="rotate(0)">
+    <path transform="scale(1.7) rotate(0)" d="M-3 0 L0 40 3 0 0 -270 z" stroke-width="0.5" >
+      <desc> Minutenzeiger minute hands </desc>
+    </path>
+    <animateTransform attributeName="transform"
+    type="rotate" values="0; 360 "
+    repeatDur="indefinite" dur="60s"
+    additive="sum" fill="freeze" />
+    <animateTransform attributeName="transform"
+    type="rotate" values="0;360"
+    begin="slf.click;" end="reset.click;freeze.click;set.click;ff.click;fb.click;slb.click;"
+    repeatDur="indefinite" dur="1s"
+    additive="sum" fill="freeze" />
+    <animateTransform attributeName="transform"
+    type="rotate" values="0;360"
+    begin="ff.click;" end="reset.click;freeze.click;set.click;slf.click;fb.click;slb.click;"
+    repeatDur="indefinite" dur="0.1s"
+    additive="sum" fill="freeze" />
+    <animateTransform attributeName="transform"
+    type="rotate" values="0;-360"
+    begin="slb.click;" end="reset.click;freeze.click;set.click;ff.click;fb.click;slf.click;"
+    repeatDur="indefinite" dur="1s"
+    additive="sum" fill="freeze" />
+    <animateTransform attributeName="transform"
+    type="rotate" values="0;-360"
+    begin="fb.click;" end="reset.click;freeze.click;set.click;ff.click;slb.click;slb.click;"
+    repeatDur="indefinite" dur="0.1s"
+    additive="sum" fill="freeze" />
+    <animateTransform attributeName="transform"
+    type="rotate" values="0;360"
+    begin="reset.click;" end="freeze.click"
+    repeatDur="indefinite" dur="60s"
+    additive="replace" fill="freeze" />
+    <!-- time reset to 12 -->
+    <animate attributeName="opacity"
+    values="0"
+    end="reset.click;freeze.click;set.click;" begin="ff.click;slf.click;fb.click;slb.click;"
+    repeatDur="indefinite"
+    additive="replace" fill="freeze" />
+    <animate attributeName="opacity"
+    values="1"
+    begin="reset.click;freeze.click;set.click;"
+    repeatDur="indefinite"
+    additive="replace" fill="freeze" />
+  </g>
+  <circle r="12" fill="url(#rg1)" stroke="purple" stroke-width="0.5" />
+  <g transform="translate(550,-250)" >
+    <use xlink:href="#button" id="reset" />
+    <text class="sitext" x="50" font-size="30" >reset time
+    
+      <tspan x="50" dy="30" font-size="16" fill="#fff" >small text</tspan>
+    </text>
+    <g id="slf">
+      <use xlink:href="#button" y="100" />
+    </g>
+    <text class="sitext" dy="100" x="50" font-size="30" >slow forward
+    
+      <tspan x="50" dy="30" font-size="16">(hides seconds hand)</tspan>
+    </text>
+    <g id="ff">
+      <use xlink:href="#button" y="200" />
+    </g>
+    <text class="sitext" dy="200" x="50" font-size="30" >fast forward
+    
+      <tspan x="50" dy="30" font-size="16">(hides seconds hand)</tspan>
+    </text>
+    <g id="slb" >
+      <use xlink:href="#button" y="300" />
+    </g>
+    <text class="sitext" dy="300" x="50" font-size="30">slow backward
+    
+      <tspan x="50" dy="30" font-size="16">(hides seconds hand)</tspan>
+    </text>
+    <g id="fb" >
+      <use xlink:href="#button" y="400" />
+    </g>
+    <text class="sitext" dy="400" x="50" font-size="30" >fast backward
+    
+      <tspan x="50" dy="30" font-size="16">(hides seconds hand)</tspan>
+    </text>
+    <use xlink:href="#button" y="500" id="set" />
+    <text dy="500" class="sitext" x="50" font-size="30" >set time</text>
+  </g>
+</svg>

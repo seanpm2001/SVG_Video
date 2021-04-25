@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="-104 -179 336 420">
+ <title>5 room puzzle</title>
+ <desc>A failed attempt on the Five-Room Puzzle on a plane with a missed door (top figure) and a solution on a torus (bottom figure) by CMG Lee.</desc>
+ <style type="text/css">
+.main  { stroke-linejoin:bevel; stroke:none;    fill:#000000; fill-rule:evenodd; }
+.top   { stroke-width:0.1;      stroke:#666666; fill:#ffffff; }
+.left  { stroke-width:0.1;      stroke:#666666; fill:url(#grad_left); }
+.right { stroke-width:0.1;      stroke:#666666; fill:url(#grad_right); }
+.path  { stroke-linecap:round;  stroke:#3333ff; fill:none; stroke-width:0.8; }
+@keyframes         trace { 0%   { stroke-dashoffset:270; }
+                           100% { stroke-dashoffset:0;   } }
+@-moz-keyframes    trace { 0%   { stroke-dashoffset:270; }
+                           100% { stroke-dashoffset:0;   } }
+@-webkit-keyframes trace { 0%   { stroke-dashoffset:270; }
+                           100% { stroke-dashoffset:0;   } }
+.trace { animation:         trace 15s ease-in-out alternate infinite;
+         -moz-animation:    trace 15s ease-in-out alternate infinite;
+         -webkit-animation: trace 15s ease-in-out alternate infinite;
+         stroke-dasharray:  268,2,0.1; }
+ </style>
+ <defs>
+  <filter id="filter_shadow">
+   <feGaussianBlur in="SourceAlpha" stdDeviation="0.5"/>
+   <feOffset dx="0" dy="1"/>
+   <feColorMatrix type="matrix" values="0,0,0,0,0 0,0,0,0,0 0,0,0,0,0 0,0,0,0.25,0"/>
+   <feBlend in="SourceGraphic"/>
+  </filter>
+  <linearGradient id="grad_left"  x1="0%" y1="0%" x2="0%" y2="100%">
+   <stop offset="0%"   stop-color="#cccccc"/>
+   <stop offset="100%" stop-color="#999999"/>
+  </linearGradient>
+  <linearGradient id="grad_right" x1="0%" y1="0%" x2="0%" y2="100%">
+   <stop offset="0%"   stop-color="#999999"/>
+   <stop offset="100%" stop-color="#666666"/>
+  </linearGradient>
+  <linearGradient id="grad_jamb"  x1="0%" y1="0%" x2="0%" y2="75%">
+   <stop offset="0%"   stop-color="#000000" stop-opacity="0.75"/>
+   <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+  </linearGradient>
+  <radialGradient id="grad_torus" cx="50%" cy="50%" fx="50%" fy="20%" r="50%">
+   <stop offset="0%"   stop-color="#99ccff"/>
+   <stop offset="75%"  stop-color="#ccffff"/>
+   <stop offset="100%" stop-color="#99ccff"/>
+  </radialGradient>
+  <mask id="mask_dotted">
+   <circle cx="0" cy="0" r="9999" fill="#ffffff"/>
+   <path d="M 31.5,18 Q 10,-6 4,-7" stroke-width="2" stroke-dasharray="1,1" stroke="#000000" fill="none"/>
+  </mask>
+  <g id="marker" transform="scale(0.5)">
+   <path d="M 0,0 l 12,-16 a 15,15 0 1 0 -24,0 z" stroke-linejoin="miter" stroke-width="4" stroke="#000000"/>
+   <circle cx="0" cy="-25" r="6" fill="#000000"/>
+  </g>
+  <path id="path1" class="path" transform="matrix(4,-2, -3,-3, 0,20)"
+         d="M 24.5,6 v -5 a 9.2,6 0 1 1 12,6 a 5.7,5.2 0 1 0 6,6
+            a 5.8,6 0 1 1 6,6 c -14,0 -12,12 -24,12 c -14,0 -8,-11 -23,-11
+            a 4.8,6.8 0 1 1 5,-7 a 6,6 0 1 0 6,-6 c -3,0 -9,-12 -9,-13"/>
+  <g id="path2" transform="matrix(4,-2, -3,-3, 0,20)" mask="url(#mask_dotted)">
+   <path class="path"
+         d="M 24.5,6 v -5 a 9.2,6 0 1 1 12,6 a 5.7,5.2 0 1 0 6,6
+            a 5.8,6 0 1 1 6,6 c -14,0 -12,12 -24,12 c -14,0 -8,-11 -23,-11
+            a 4.8,6.8 0 1 1 5,-7 a 6,6 0 1 0 6,-6 c -3,0 -9,-12 -9,-13
+            c 1,-5 28,22 28,25 q 0,1 -12.3,-0.7"/>
+  </g>
+  <path id="jamb_base" d="M 0,0 V 5 H 1 V 0 Z"/>
+  <g id="jamb">
+   <use xlink:href="#jamb_base"/>
+   <use xlink:href="#jamb_base" fill="url(#grad_jamb)"/>
+  </g>
+  <path id="short" d="M 0,0 V 5 h  -4 v -4 h -3 v 4 h  -4 V 0 Z"/>
+  <path id="long1" d="M 0,0 V 5 h -10 v -4 h -3 v 4 h -10 V 0 Z"/>
+  <path id="long2" d="M 0,0 V 5 h  -4 v -4 h -3 v 4
+                                h  -9 v -4 h -3 v 4 h  -4 V 0 Z"/>
+  <g id="right_jamb" ><use class="right" xlink:href="#jamb"  transform="matrix( 4,-2, 0,4, 0,0)"/></g>
+  <g id="left_jamb"  ><use class="left"  xlink:href="#jamb"  transform="matrix(-3,-3, 0,4, 0,0)"/></g>
+  <g id="left_short" ><use class="left"  xlink:href="#short" transform="matrix(-3,-3, 0,4, 0,0)"/></g>
+  <g id="right_short"><use class="right" xlink:href="#short" transform="matrix( 4,-2, 0,4, 0,0)"/></g>
+  <g id="right_long1"><use class="right" xlink:href="#long1" transform="matrix( 4,-2, 0,4, 0,0)"/></g>
+  <g id="right_long2"><use class="right" xlink:href="#long2" transform="matrix( 4,-2, 0,4, 0,0)"/></g>
+  <g id="room_short">
+   <use xlink:href="#left_jamb"  transform="translate(-16, 8)"/>
+   <use xlink:href="#right_jamb" transform="translate( 12,12)"/>
+   <use xlink:href="#left_short"/><use xlink:href="#right_short"/>
+  </g>
+  <g id="room_long1">
+   <use xlink:href="#left_jamb"  transform="translate(-40,20)"/>
+   <use xlink:href="#right_jamb" transform="translate( 12,12)"/>
+   <use xlink:href="#left_short"/><use xlink:href="#right_long1"/>
+  </g>
+  <g id="room_long2">
+   <use xlink:href="#left_jamb"  transform="translate(-16,8)"/>
+   <use xlink:href="#left_jamb"  transform="translate(-64,32)"/>
+   <use xlink:href="#right_jamb" transform="translate(12, 12)"/>
+   <use xlink:href="#left_short"/><use xlink:href="#right_long2"/>
+  </g>
+  <g id="puzzle" opacity="0.75" filter="url(#filter_shadow)">
+   <use xlink:href="#room_long1" transform="translate(120,-168)"/>
+   <use xlink:href="#room_long1" transform="translate( 24,-120)"/>
+   <use xlink:href="#room_short" transform="translate(156,-132)"/>
+   <use xlink:href="#room_long2" transform="translate(108,-108)"/>
+   <use xlink:href="#room_short" transform="translate( 12, -60)"/>
+   <use xlink:href="#left_jamb"  transform="translate(176, -88)"/>
+   <use xlink:href="#left_jamb"  transform="translate(104, -52)"/>
+   <use xlink:href="#left_jamb"  transform="translate( 32, -16)"/>
+   <use xlink:href="#right_jamb" transform="translate(-63, -63)"/>
+   <use xlink:href="#right_jamb" transform="translate(-24, -24)"/>
+   <path class="right" transform="matrix( 4,-2,  0, 4, 0,0)" d="M 0,0 V 5 h 5 v -4 h 3 v 4
+                                                                h 15 v -4 h 3 v  4
+                                                                h 15 v -4 h 3 v  4 h 5 V 0 Z"/>
+   <path class="left"  transform="matrix(-3,-3,  0, 4, 0,0)" d="M 0,0 V 5 h 5 v -4 h 3 v 4
+                                                                h 10 v -4 h 3 v  4 h 4 V 0 Z"/>
+   <path class="top"   transform="matrix( 4,-2, -3,-3, 0,0)" d="M  0, 0 V 25 H 49 V  0 Z  M  1,1 v 11 h 11 V 1 Z
+                                                                M  1,13 v 11 h 23 V 13 Z  M 13,1 v 11 h 23 V 1 Z
+                                                                M 25,13 v 11 h 23 V 13 Z  M 37,1 v 11 h 11 V 1 Z"/>
+  </g>
+ </defs>
+ <circle cx="0" cy="0" r="9999" fill="#ffffff"/>
+ <g class="main">
+  <g>
+   <rect transform="matrix(4,-2, -3,-3, 0,20)" x="-4.5" y="-7.5" width="60" height="40" rx="9" ry="9" fill="#cceeff"/>
+   <use class="trace" xlink:href="#path1"/>
+   <use xlink:href="#puzzle"/>
+   <path d="M 33,-99 l 20,20 m 0,-20 l -20,20" stroke-linecap="round" stroke-width="4" stroke="#cc0099"/>
+   <use xlink:href="#marker" transform="translate(80,-48)" fill="#00cc99"/>
+   <use xlink:href="#marker" transform="translate(32, 28)" fill="#ff0000"/>
+  </g>
+  <g transform="translate(0,202)">
+   <path d="M 70,35 a 150,100 0 1 1 1,0 m -1,-133 a 15,10 0 1 1 1,0" fill="url(#grad_torus)"/>
+   <use class="trace" xlink:href="#path2"/>
+   <use xlink:href="#puzzle"/>
+   <use xlink:href="#marker" transform="translate(80,-48)" fill="#00cc99"/>
+   <use xlink:href="#marker" transform="translate(22,-75)" fill="#ff0000"/>
+  </g>
+ </g>
+</svg>

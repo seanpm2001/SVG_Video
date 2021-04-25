@@ -1,0 +1,205 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="-120 -169 400 320">
+ <title>Corpus Clock principle</title>
+ <desc>SMIL animation of the simplified operation of the escapement and seconds disc of the Corpus Clock, by CMG Lee. For clarity, each minute is divided into only 10 seconds, each 6 times longer than an ordinary second, and the minute dial is folded to the right. The green lines represent slots in the rotating disc, while the blue lines represent fixed slots.</desc>
+ <style type="text/css">
+  #main             { fill:none; stroke:none; stroke-linejoin:round; }
+  #pivot            { fill-opacity:1; }
+  #pendulum         { fill:#000000; fill-opacity:0.25; }
+  #escapement_left  { fill:#ff6666; }
+  #escapement_right { fill:#cc00ff; }
+  #contact          { fill:#ffff00; }
+  #light            { fill:url(#grad_light); }
+  #rotor            { fill:#ffff99; stroke:#ff9900; }
+  .slot_stator      { fill:#0000ff; fill-opacity:0.5; }
+  .slot_rotor       { fill:#00cc00; stroke:none; }
+ </style>
+ <defs>
+  <radialGradient id="grad_light" cx="50%" cy="50%" fx="50%" fy="50%" r="50%">
+   <stop offset="10%" stop-color="#66ccff" stop-opacity="1"/>
+   <stop offset="90%" stop-color="#66ccff" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="grad_rotor" cx="50%" cy="50%" fx="50%" fy="50%" r="50%">
+   <stop offset="10%" stop-color="#ffffff"/>
+   <stop offset="90%" stop-color="#ffcc00"/>
+  </radialGradient>
+
+  <circle id="pivot" cx="0" cy="0" r="2"/>
+  <g id="pendulum">
+   <path d="M -60,13 L -50,-5 H 75 A 20,20 0 1 1 75,5 H 55 L 60,13 L 45,5 H 5 V 220 A 30,30 0 1 1 -5,220 V 5 H -48 Z"/>
+   <use xlink:href="#pivot" fill="#ffffff" transform="translate(-30,0)"/>
+   <use xlink:href="#pivot" fill="#000000"/>
+  </g>
+  <path id="escapement_left"  d="M 15,-20 L -40,36 H -35 L -32,39 L 20,-15 A 10,10 0 1 0 15,-20"/>
+  <path id="escapement_right" d="M -37,-20 A 10,10 0 1 0 -40,-12 L 95,44 L 92,51 Q 110,43 100,37 Z"/>
+  <path id="contact" d="M 17,0 Q 0,0 12,12 Q 0,0 0,17 Q 0,0 -12,12 Q 0,0 -17,0 Q 0,0 -12,-12 Q 0,0 0,-17 Q 0,0 12,-12 Q 0,0 17,0"/>
+  <ellipse id="light" cx="0" cy="0" rx="10" ry="20"/>
+  <rect id="slot" x="-2" y="-10" width="4" height="20" rx="2" ry="2"/>
+  <g id="tooth_rotor">
+   <path d="M 0,98 V 0   L 58,79" stroke="none"/>
+   <path d="M 0,98 V 110 L 58,79"/>
+  </g>
+  <g id="rotor">
+   <use xlink:href="#tooth_rotor"/>
+   <use xlink:href="#tooth_rotor" transform="rotate( 36)"/>
+   <use xlink:href="#tooth_rotor" transform="rotate( 72)"/>
+   <use xlink:href="#tooth_rotor" transform="rotate(108)"/>
+   <use xlink:href="#tooth_rotor" transform="rotate(144)"/>
+   <use xlink:href="#tooth_rotor" transform="rotate(180)"/>
+   <use xlink:href="#tooth_rotor" transform="rotate(216)"/>
+   <use xlink:href="#tooth_rotor" transform="rotate(252)"/>
+   <use xlink:href="#tooth_rotor" transform="rotate(288)"/>
+   <use xlink:href="#tooth_rotor" transform="rotate(324)"/>
+   <use xlink:href="#pivot" fill="#ff9900"/>
+  </g>
+
+  <use id="second_light" xlink:href="#light" transform="translate(0,-70)"/>
+  <use id="second_slot_rotor"  class="slot_rotor"  xlink:href="#slot" transform="translate(0,-75)"/>
+  <use id="second_slot_stator" class="slot_stator" xlink:href="#slot" transform="translate(0,-65)"/>
+  <g id="second_rotor" class="rotor">
+   <use xlink:href="#rotor"/>
+   <use xlink:href="#pivot" fill="#00cc00" stroke="none" transform="translate(0,-90)"/>
+   <use xlink:href="#pivot" fill="#cc0000" stroke="none" transform="translate(90,30)"/>
+   <use xlink:href="#second_slot_rotor"/>
+   <use xlink:href="#second_slot_rotor" transform="rotate( 32.73)"/>
+   <use xlink:href="#second_slot_rotor" transform="rotate( 65.45)"/>
+   <use xlink:href="#second_slot_rotor" transform="rotate( 98.18)"/>
+   <use xlink:href="#second_slot_rotor" transform="rotate(130.91)"/>
+   <use xlink:href="#second_slot_rotor" transform="rotate(163.64)"/>
+   <use xlink:href="#second_slot_rotor" transform="rotate(196.36)"/>
+   <use xlink:href="#second_slot_rotor" transform="rotate(229.09)"/>
+   <use xlink:href="#second_slot_rotor" transform="rotate(261.82)"/>
+   <use xlink:href="#second_slot_rotor" transform="rotate(294.55)"/>
+   <use xlink:href="#second_slot_rotor" transform="rotate(327.27)"/>
+  </g>
+  <g id="second_stator">
+   <use xlink:href="#second_slot_stator"/>
+   <use xlink:href="#second_slot_stator" transform="rotate( 36)"/>
+   <use xlink:href="#second_slot_stator" transform="rotate( 72)"/>
+   <use xlink:href="#second_slot_stator" transform="rotate(108)"/>
+   <use xlink:href="#second_slot_stator" transform="rotate(144)"/>
+   <use xlink:href="#second_slot_stator" transform="rotate(180)"/>
+   <use xlink:href="#second_slot_stator" transform="rotate(216)"/>
+   <use xlink:href="#second_slot_stator" transform="rotate(252)"/>
+   <use xlink:href="#second_slot_stator" transform="rotate(288)"/>
+   <use xlink:href="#second_slot_stator" transform="rotate(324)"/>
+  </g>
+
+  <use id="minute_light" xlink:href="#light" transform="translate(0,-30)"/>
+  <use id="minute_slot_rotor"  class="slot_rotor"  xlink:href="#slot" transform="translate(0,-35)"/>
+  <use id="minute_slot_stator" class="slot_stator" xlink:href="#slot" transform="translate(0,-25)"/>
+  <g id="minute_rotor" class="rotor">
+   <use xlink:href="#rotor" transform="rotate(2) scale(-0.85,0.85)"/>
+   <use xlink:href="#pivot" fill="#ff9900"/>
+   <use xlink:href="#pivot" fill="#00cc00" stroke="none" transform="translate(0,-50)"/>
+   <use xlink:href="#minute_slot_rotor"/>
+   <use xlink:href="#minute_slot_rotor" transform="rotate( 32.73)"/>
+   <use xlink:href="#minute_slot_rotor" transform="rotate( 65.45)"/>
+   <use xlink:href="#minute_slot_rotor" transform="rotate( 98.18)"/>
+   <use xlink:href="#minute_slot_rotor" transform="rotate(130.91)"/>
+   <use xlink:href="#minute_slot_rotor" transform="rotate(163.64)"/>
+   <use xlink:href="#minute_slot_rotor" transform="rotate(196.36)"/>
+   <use xlink:href="#minute_slot_rotor" transform="rotate(229.09)"/>
+   <use xlink:href="#minute_slot_rotor" transform="rotate(261.82)"/>
+   <use xlink:href="#minute_slot_rotor" transform="rotate(294.55)"/>
+   <use xlink:href="#minute_slot_rotor" transform="rotate(327.27)"/>
+  </g>
+  <g id="minute_stator">
+   <use xlink:href="#minute_slot_stator"/>
+   <use xlink:href="#minute_slot_stator" transform="rotate(36)"/>
+   <use xlink:href="#minute_slot_stator" transform="rotate(72)"/>
+   <use xlink:href="#minute_slot_stator" transform="rotate(108)"/>
+   <use xlink:href="#minute_slot_stator" transform="rotate(144)"/>
+   <use xlink:href="#minute_slot_stator" transform="rotate(180)"/>
+   <use xlink:href="#minute_slot_stator" transform="rotate(216)"/>
+   <use xlink:href="#minute_slot_stator" transform="rotate(252)"/>
+   <use xlink:href="#minute_slot_stator" transform="rotate(288)"/>
+   <use xlink:href="#minute_slot_stator" transform="rotate(324)"/>
+  </g>
+
+  <animateMotion    xlink:href="#escapement1"       path="M -30,-124" rotate="0"            begin="0s" dur="0.1s" fill="freeze"/>
+  <animateTransform xlink:href="#escapement_right1" attributeName="transform" type="rotate" begin="0s" dur="0.1s" fill="freeze" values="-15;-15" keyTimes="0;1"/>
+  <animateTransform xlink:href="#pendulum1"         attributeName="transform" type="rotate" begin="0s" dur="0.1s" fill="freeze" values="-10;-10" keyTimes="0;1"/>
+
+  <animateTransform xlink:href="#pendulum1" attributeName="transform" type="rotate" begin="1.5s" dur="12s" repeatCount="indefinite" calcMode="spline"
+                    values="-10;10;-10" keyTimes="0;0.5;1" keySplines="0.365,0 0.635,1;0.365,0 0.635,1"/>
+  <animateMotion    xlink:href="#escapement1" path="M -30,-124 V -136 V -124" begin="1.5s" dur="12s"
+                    calcMode="spline" keySplines="0.365,0 0.635,1;0.365,0 0.635,1" rotate="0" repeatCount="indefinite"/>
+  <animateTransform xlink:href="#escapement_left1" attributeName="transform" type="rotate" begin="1.5s" dur="12s" repeatCount="indefinite"
+                    values="0;-1;8;-1;0" keyTimes="0;0.125;0.135;0.875;1"/>
+  <animateTransform xlink:href="#escapement_right1" attributeName="transform" type="rotate" begin="1.5s" dur="12s" repeatCount="indefinite"
+                    values="-15;-1;0;0;-5;-15" keyTimes="0;0.375;0.5;0.625;0.635;1"/>
+  <animate xlink:href="#contact1" attributeName="fill-opacity" begin="1.5s" dur="12s" repeatCount="indefinite"
+                    values="  0;   0;   1;0"
+                    keyTimes="0;0.87;0.88;1"/>
+  <animate xlink:href="#contact2" attributeName="fill-opacity" begin="1.5s" dur="12s" repeatCount="indefinite"
+                    values="  0;   0;   1;  0;0"
+                    keyTimes="0;0.37;0.38;0.5;1"/>
+  <animate xlink:href="#contact3" attributeName="fill-opacity" begin="1.5s" dur="12s" repeatCount="indefinite"
+                    values="  0;   0;   1;  0;0"
+                    keyTimes="0;0.13;0.14;0.2;1"/>
+  <animate xlink:href="#contact4" attributeName="fill-opacity" begin="1.5s" dur="12s" repeatCount="indefinite"
+                    values="  0;   0;   1;  0;0"
+                    keyTimes="0;0.63;0.64;0.7;1"/>
+  <animate xlink:href="#contact5" attributeName="fill-opacity" begin="0s" dur="60s" repeatCount="indefinite"
+                    values="  0;  0;  1;   0;0"
+                    keyTimes="0;0.9;0.9;0.92;1"/>
+
+  <animate xlink:href="#second_light1" attributeName="opacity" begin="1.5s" dur="6s" repeatCount="indefinite"
+                    values="  1;    1; 0.2;    1;0.2;    1; 0.2;    1;0.2;    1;0.2;     1;0.2;    1; 0.2;    1;0.2;    1; 0.2;    1;0.2;    1; 0.2;    1;1"
+                    keyTimes="0;0.225;0.25;0.275;0.3;0.325;0.35;0.375;0.4;0.425;0.45;0.475;0.5;0.525;0.55;0.575;0.6;0.625;0.65;0.675;0.7;0.725;0.75;0.775;1"/>
+  <animateTransform xlink:href="#second_light1" attributeName="transform" type="rotate" begin="1.5s" dur="6s" repeatCount="indefinite" calcMode="discrete"
+                    values="  0;  36; 72; 108;144; 180;216; 252;288; 324;360"
+                    keyTimes="0;0.25;0.3;0.35;0.4;0.45;0.5;0.55;0.6;0.65;0.7"/>
+  <animateTransform xlink:href="#second_light2" attributeName="transform" type="rotate" begin="1.5s" dur="60s" repeatCount="indefinite" calcMode="discrete"
+                    values="  0;   36;   72;  108;  144;  180;  216;  252;  288;  324;  360;360"
+                    keyTimes="0;0.075;0.175;0.275;0.375;0.475;0.575;0.675;0.775;0.875;0.975;1"/>
+  <animateTransform xlink:href="#second_rotor1" attributeName="transform" type="rotate" begin="1.5s" dur="60s" repeatCount="indefinite"
+                    values="  0;   0;    36;   36;   72;   72;  108;  108;  144;  144;  180;  180;  216;  216;  252;  252;  288;  288;  324;  324;  360;360"
+                    keyTimes="0;0.025;0.075;0.125;0.175;0.225;0.275;0.325;0.375;0.425;0.475;0.525;0.575;0.625;0.675;0.725;0.775;0.825;0.875;0.925;0.975;1"/>
+
+  <animate xlink:href="#minute_light1" attributeName="opacity" begin="0s" dur="60s" repeatCount="indefinite"
+                    values="  1;    1; 0.2;    1;0.2;    1; 0.2;    1;0.2;    1;0.2;     1;0.2;    1; 0.2;    1;0.2;    1; 0.2;    1;0.2;    1; 0.2;    1;1"
+                    keyTimes="0;0.225;0.25;0.275;0.3;0.325;0.35;0.375;0.4;0.425;0.45;0.475;0.5;0.525;0.55;0.575;0.6;0.625;0.65;0.675;0.7;0.725;0.75;0.775;1"/>
+  <animateTransform xlink:href="#minute_light1" attributeName="transform" type="rotate" begin="0s" dur="60s" repeatCount="indefinite" calcMode="discrete"
+                    values="  0;  36;   72; 108;  144; 180;  216; 252;  288; 324;  360"
+                    keyTimes="0;0.95;0.955;0.96;0.965;0.97;0.975;0.98;0.985;0.99;0.995"/>
+  <animateTransform xlink:href="#minute_light2" attributeName="transform" type="rotate" begin="0s" dur="600s" repeatCount="indefinite" calcMode="discrete"
+                    values="  0; 36; 72;108;144;180;216;252;288;324"
+                    keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.6;0.7;0.8;0.9"/>
+  <animateTransform xlink:href="#minute_rotor1" attributeName="transform" type="rotate" begin="0s" dur="600s" repeatCount="indefinite"
+                    values="  0;    0; 36;  36;  72;   72;108;  108;144;  144;180;  180;216;  216;252;  252;288;  288;324;  324;360"
+                    keyTimes="0;0.095;0.1;0.195;0.2;0.295;0.3;0.395;0.4;0.495;0.5;0.595;0.6;0.695;0.7;0.795;0.8;0.895;0.9;0.995;1"/>
+ </defs>
+ <rect x="-4999" y="-4999" width="9999" height="9999" fill="#ffffff"/>
+ <g id="main">
+  <g id="second_rotor2">
+   <use id="second_rotor1" xlink:href="#second_rotor"/>
+  </g>
+  <use id="second_stator" xlink:href="#second_stator"/>
+  <g id="second_light2">
+   <use id="second_light1" xlink:href="#second_light"/>
+  </g>
+  <g transform="translate(180,0) scale(-1,1)">
+   <use id="minute_rotor1" xlink:href="#minute_rotor"/>
+   <use id="minute_stator" xlink:href="#minute_stator"/>
+   <g id="minute_light2">
+    <use id="minute_light1" xlink:href="#minute_light"/>
+   </g>
+  </g>
+  <g id="escapement1">
+   <use id="escapement_left1"  xlink:href="#escapement_left"/>
+   <use id="escapement_right1" xlink:href="#escapement_right"/>
+  </g>
+  <g transform="translate(0,-130)">
+   <use id="pendulum1" xlink:href="#pendulum"/>
+  </g>
+  <g fill-opacity="0">
+   <use id="contact1" xlink:href="#contact" transform="translate(-65, -90)"/>
+   <use id="contact2" xlink:href="#contact" transform="translate( 65, -90)"/>
+   <use id="contact3" xlink:href="#contact" transform="translate(-58,-112)"/>
+   <use id="contact4" xlink:href="#contact" transform="translate( 58,-112)"/>
+   <use id="contact5" xlink:href="#contact" transform="translate( 90, -25)"/>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,8 @@
+<svg width="900" height="900" viewBox="-450 -450 900 900" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<circle r="416" fill="#FFF" stroke="#000"/>
+<g>
+<path d="M416 0a416 416 0 0 1-832 0z"/>
+<path d="M40 0A40 40 0 0 0 28.28-28.28M72 0A72 72 0 0 0 50.91-50.91M104 0A104 104 0 0 0 73.54-73.54M96.17-96.17A136 136 0 0 0 0-136M118.79-118.79A168 168 0 0 0 0-168M141.42-141.42A200 200 0 0 0 0-200M0-232A232 232 0 0 0-164.05-164.05M0-264A264 264 0 0 0-186.68-186.68M0-296A296 296 0 0 0-209.3-209.3M-231.93-231.93A328 328 0 0 0-328 0M-254.56-254.56A360 360 0 0 0-360 0M-277.19-277.19A392 392 0 0 0-392 0" fill="none" stroke="#000" stroke-width="16"/>
+<animateTransform attributeName="transform" type="rotate" to="360" dur="0.145s" repeatCount="indefinite"/>
+</g>
+</svg>

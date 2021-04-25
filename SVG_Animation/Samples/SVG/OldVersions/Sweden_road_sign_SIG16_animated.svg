@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="336.61588" height="212.60025" viewBox="0 0 336.61588 212.60025">
+  <defs>
+    <linearGradient id="a">
+      <stop offset="0" stop-color="#ce252c"/>
+      <stop offset="1" stop-color="#ce252c" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient xlink:href="#a" id="h" cx="56.6924" cy="56.6924" fx="56.6924" fy="56.6924" r="28.3467" gradientUnits="userSpaceOnUse" gradientTransform="matrix(3 0 0 3 -113.39 -113.39)"/>
+    <radialGradient xlink:href="#a" id="i" cx="56.6924" cy="56.6924" fx="56.6924" fy="56.6924" r="28.3467" gradientUnits="userSpaceOnUse" gradientTransform="matrix(3 0 0 3 -14.17 -113.39)"/>
+  </defs>
+  <path d="M230.31588 177.16563c39.13875 0 70.86625-31.727 70.86625-70.86525 0-39.13813-31.7275-70.86725-70.86625-70.86725h-124.0155c-39.13826 0-70.86576 31.72912-70.86576 70.86725 0 39.13825 31.7275 70.86525 70.86575 70.86525h124.0155"/>
+  <path d="M137.76356 106.30038c0-17.37688-14.0875-31.46388-31.46375-31.46388-17.3771 0-31.4631 14.087-31.4631 31.46388 0 17.3765 14.086 31.46337 31.4631 31.46337 17.3763 0 31.4638-14.08687 31.4638-31.46337zm124.01638 0c0-17.37687-14.0875-31.46387-31.46375-31.46387-17.3772 0-31.4632 14.087-31.4632 31.4639 0 17.3765 14.086 31.4634 31.4631 31.4634 17.37624 0 31.46374-14.08683 31.46374-31.46333z" fill="none" stroke="#fff" stroke-width="1.25"/>
+  <path d="M141.7335 106.30038c0-19.56938-15.86425-35.43363-35.43312-35.43363-19.56938 0-35.43363 15.86425-35.43363 35.43363 0 19.56887 15.86425 35.43312 35.43362 35.43312 19.56888 0 35.43313-15.86425 35.43313-35.43312" fill="#ce252c">
+    <animate id="c" attributeName="opacity" from="0" to="1" dur="0.1s" begin="b.end;0s"/>
+    <animate id="d" attributeName="opacity" from="1" to="0" dur="0.1s" begin="c.end+0.3s"/>
+    <animate id="b" attributeName="opacity" from="0" to="0" dur="0.3s" begin="d.end"/>
+  </path>
+  <path d="M265.74962 106.30038c0-19.56938-15.86375-35.43363-35.43375-35.43363-19.56875 0-35.4325 15.86425-35.4325 35.43363 0 19.56887 15.86375 35.43312 35.4325 35.43312 19.57 0 35.43375-15.86425 35.43375-35.43312" fill="#ce252c">
+    <animate id="f" attributeName="opacity" from="1" to="0" dur="0.1s" begin="e.end+0.3s;0s"/>
+    <animate id="g" attributeName="opacity" from="0" to="0" dur="0.3s" begin="f.end"/>
+    <animate id="e" attributeName="opacity" from="0" to="1" dur="0.1s" begin="g.end"/>
+  </path>
+  <path d="M141.7325 56.6918c0 46.9665-38.0742 85.0407-85.0395 85.0407-46.9665 0-85.0407-38.0742-85.0407-85.0407 0-46.9653 38.0742-85.0395 85.0407-85.0395 46.9653 0 85.0395 38.0742 85.0395 85.0395" fill="url(#h)" transform="matrix(1.25 0 0 -1.25 35.44 177.17)">
+    <animate attributeName="opacity" from="0" to="1" dur="0.1s" begin="b.end;0s"/>
+    <animate attributeName="opacity" from="1" to="0" dur="0.1s" begin="c.end+0.3s"/>
+    <animate attributeName="opacity" from="0" to="0" dur="0.3s" begin="d.end"/>
+  </path>
+  <path d="M240.9456 56.6918c0 46.9665-38.0742 85.0407-85.0395 85.0407-46.9665 0-85.0407-38.0742-85.0407-85.0407 0-46.9653 38.0742-85.0395 85.0407-85.0395 46.9653 0 85.0395 38.0742 85.0395 85.0395" fill="url(#i)" transform="matrix(1.25 0 0 -1.25 35.44 177.17)">
+    <animate attributeName="opacity" from="1" to="0" dur="0.1s" begin="e.end+0.3s;0s"/>
+    <animate attributeName="opacity" from="0" to="0" dur="0.3s" begin="f.end"/>
+    <animate attributeName="opacity" from="0" to="1" dur="0.1s" begin="g.end"/>
+  </path>
+</svg>

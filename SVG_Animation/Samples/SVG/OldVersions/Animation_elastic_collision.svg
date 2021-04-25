@@ -1,0 +1,140 @@
+<!-- SVG-Animation for collission problems-->
+<!-- This animation is created by Johannes Durst-->
+
+<svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+    <meta charset="utf-8"/>
+    <!-- Define the gradients for color filling -->
+     <defs>
+        <radialGradient cx="25%" cy="25%" id="rg1">
+            <stop offset="0%" stop-color="#bbb" />
+            <stop offset="100%" stop-color="#444" />
+        </radialGradient>
+        <radialGradient cx="25%" cy="25%" id="rg2">
+            <stop offset="0%" stop-color="#bbb" />
+            <stop offset="100%" stop-color="grey" />
+        </radialGradient>
+        <radialGradient cx="25%" cy="25%" r="100%" id="rg_green">
+            <stop offset="0%" stop-color="#bbb" />
+            <stop offset="100%" stop-color="green" />
+        </radialGradient>   
+        <radialGradient cx="25%" cy="25%" r="100%" id="rg_blue">
+            <stop offset="0%" stop-color="#bbb" />
+            <stop offset="100%" stop-color="blue" />
+        </radialGradient> 
+     </defs>
+     <!-- Main Frame -->
+	<rect x="0" y="22" width="190" height="107" style="fill:rgb(255,255,255);stroke-width:.2;stroke:rgb(0,0,0)" />
+    <!-- grid-->
+    <line x1="15" y1="65" x2="15" y2="85" stroke="grey" stroke-width=".1" />
+    <line x1="25" y1="65" x2="25" y2="85" stroke="grey" stroke-width=".1" />
+    <line x1="35" y1="65" x2="35" y2="85" stroke="grey" stroke-width=".1" />
+    <line x1="45" y1="65" x2="45" y2="85" stroke="grey" stroke-width=".1" />
+    <line x1="55" y1="40" x2="55" y2="111.3" stroke="grey" stroke-width=".1" />
+    <line x1="65" y1="40" x2="65" y2="111.3" stroke="grey" stroke-width=".1" />  
+    <line x1="75" y1="40" x2="75" y2="111.3" stroke="grey" stroke-width=".1" />  
+    <line x1="85" y1="40" x2="85" y2="111.3" stroke="grey" stroke-width=".1" /> 
+    <line x1="95" y1="40" x2="95" y2="111.3" stroke="red" stroke-width=".1" /> 
+    <line x1="105" y1="40" x2="105" y2="111.3" stroke="grey" stroke-width=".1" /> 
+    <line x1="115" y1="40" x2="115" y2="111.3" stroke="grey" stroke-width=".1" /> 
+    <line x1="125" y1="40" x2="125" y2="111.3" stroke="grey" stroke-width=".1" /> 
+    <line x1="135" y1="40" x2="135" y2="111.3" stroke="grey" stroke-width=".1" />
+
+    <!-- first situation: both balls have the same mass an velocity (in opposed directions), so after the collission both balls switch the direction of velocity -->
+    <!-- m1=m2 and v1=-v2 -->
+        <!-- Left Ball -->
+	<circle cx="50" cy="50" r="5" width="10" height="10" fill="url(#rg1)">
+	<animate 
+		attributeName="cx" dur="15s" 
+        values="50;90;50;50" 
+        keyTimes="0;.2;.4;1" 
+        begin="startButton.click" end="resetButton.click" repeatCount="1" />
+      <animate attributeName="opacity" dur="15s" 
+        values="1;1;0;0;1" 
+        keyTimes="0;0.35;.4;.9;1" 
+        begin="startButton.click" end="resetButton.click" repeatCount="1" />
+    </circle>
+        <!-- Right Ball -->
+    <circle cx="140" cy="50" r="5" width="10" height="10" fill="url(#rg1)">
+      <animate attributeName="cx" dur="15s" 
+        values="140;100;140;140" 
+        keyTimes="0;.2;.4;1" 
+        begin="startButton.click" end="resetButton.click"  repeatCount="1" />
+      <animate attributeName="opacity" dur="15s" 
+        values="1;1;0;0;1" 
+        keyTimes="0;0.35;.4;.9;1" 
+        begin="startButton.click" end="resetButton.click" repeatCount="1" />
+    </circle>  
+    <!-- second situation: both balls have the same mass but the first ball has twice the velocity of the second ball. --> 
+    <!-- m1=m2 and v1=2*v an v2=-v => u1=-2/3*v and u2=4/3*v-->
+    <!-- total time: 15s; balls disappeare .5s before reaching the target and appeares again in the last 1.5 s (.9) -->
+    <!-- left ball has double distance  -->
+    <!-- left ball: 3s->.2; (+4.5s) 7.5s->.5 -->
+    <!-- right ball: 3s->.2; (+2.25s) 5.25s->.35 -->
+        <!-- Left Ball -->
+    <circle cx="10" cy="75" r="5" width="10" height="10" fill="url(#rg1)">
+      <animate attributeName="cx" dur="15s" 
+        values="10;90;10;10" 
+        keyTimes="0;.2;.5;1" 
+        begin="startButton.click" end="resetButton.click" repeatCount="1" />
+      <animate attributeName="opacity" dur="15s" 
+        values="1;1;0;0;1" 
+        keyTimes="0;.45;.5;.9;1" 
+        begin="startButton.click" end="resetButton.click"  repeatCount="1" />
+    </circle>
+        <!-- Right Ball -->
+    <circle cx="140" cy="75" r="5" width="10" height="10" fill="url(#rg1)">
+      <animate attributeName="cx" dur="15s" 
+        values="140;100;140;140" 
+        keyTimes="0;.2;.35;1" 
+        begin="startButton.click" end="resetButton.click"  repeatCount="1" />
+      <animate attributeName="opacity" dur="15s" 
+        values="1;1;0;0;1" 
+        keyTimes="0;.3;.35;.9;1" 
+        begin="startButton.click" end="resetButton.click" repeatCount="1" />
+    </circle>  
+    <!-- third situation: both balls have the same velocity (in opposite) but the first ball has twice the mass of the second ball. --> 
+    <!-- m1=2*m and m2=m; v1=v and v2=-v => u1=-1/3*v and u2=5/3*v-->
+    <!-- total time: 15s; balls disappeare .5s before reaching the target and appeares again in the last 1.5 s (.9) -->
+    <!-- distance to collission point is for both balls the same -->
+    <!-- left ball: 3s->.2; (+9s) 12s->.8 -->
+    <!-- right ball: 3s->.2; (+1.8s) 4.8s->.32 -->
+    <!-- m2=2*m1 and v1=-v2 -->
+        <!-- Left Ball -->
+    <circle cx="48.7" cy="100" r="6.3" width="10" height="10" fill="url(#rg1)">
+      <animate attributeName="cx" dur="15s" 
+        values="48.7;88.7;48.7;48.7" 
+        keyTimes="0;.2;.8;1" 
+        begin="startButton.click" end="resetButton.click"  repeatCount="1" />
+      <animate attributeName="opacity" dur="15s" 
+        values="1;1;0;0;1" 
+        keyTimes="0;.7;.8;.9;1" 
+        begin="startButton.click" end="resetButton.click"  repeatCount="1" />
+    </circle> 
+        <!-- Right Ball -->
+    <circle cx="140" cy="100" r="5" width="10" height="10" fill="url(#rg1)">
+      <animate attributeName="cx" dur="15s" 
+        values="140;100;140;140" 
+        keyTimes="0;.2;.32;1" 
+        begin="startButton.click" end="resetButton.click"  repeatCount="1" />
+      <animate attributeName="opacity" dur="15s" 
+        values="1;1;0;0;1" 
+        keyTimes="0;.28;.32;.9;1" 
+        begin="startButton.click" end="resetButton.click"  repeatCount="1" />
+    </circle>
+
+    <!-- Startbutton -->
+    <rect id="startButton" style="cursor:pointer;"
+          x="165" y="60" rx="1" height="10" width="20"
+          fill="url(#rg_green)" stroke="black" stroke-width=".5" />
+    <text x="175" y="67.5" 
+          font-family="Arial" font-size="7px" text-anchor="middle"
+          style="pointer-events:none;">Start</text> 
+    <!-- Resetbutton -->
+    <rect id="resetButton" style="cursor:pointer;"
+          x="165" y="80" rx="1" height="10" width="20"
+          fill="url(#rg_blue)" stroke="black" stroke-width=".5" />
+    <text x="175" y="87.5" 
+          font-family="Arial" font-size="7px" text-anchor="middle"
+          style="pointer-events:none;">Reset</text>
+
+</svg>

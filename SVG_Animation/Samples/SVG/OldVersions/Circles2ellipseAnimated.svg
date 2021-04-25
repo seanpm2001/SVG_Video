@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg"  xmlns:xlink="http://www.w3.org/1999/xlink" style="fill:black; stroke:grey; stroke-width:0.01; stroke-opacity:.5;" viewBox="-160 -160 320 320" width="300px" height="300px">
+ <circle cx="0" cy="0" r="100" stroke-width="2" stroke="black" fill="none"/>
+ <symbol id="mobile" overflow="visible" style="fill-opacity:0.7;">
+  <circle cx="0" cy="0" r="50" stroke-width="3" fill="none"/>
+  <line x1="10" y1="0" x2="100" y2="0" stroke-width="3" stroke="lightgrey"/>
+  <circle cx="10" cy="0" r="4" stroke-width="1" stroke="black" fill="green"/>
+  <circle cx="50" cy="0" r="4" stroke-width="1" stroke="black" fill="blue"/>
+  <circle cx="100" cy="0" r="4" stroke-width="1" stroke="black" fill="red"/>
+ </symbol>
+ <use xlink:href="#mobile" visibility="hidden">
+  <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0" to="-360" dur="3s" additive="sum" fill="freeze" repeatCount="2"/>
+  <animateTransform attributeName="transform" attributeType="XML" type="translate" from="50,0" to="50,0" dur="3s" additive="sum" fill="freeze" repeatCount="2"/>
+  <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0" to="720" dur="3s" additive="sum" fill="freeze" repeatCount="2"/>
+  <set attributeName="visibility" attributeType="CSS" to="visible" begin="0s" dur="6s"/>
+  <set attributeName="visibility" attributeType="CSS" to="hidden" begin="6s" dur="0s" fill="freeze"/>
+ </use>
+ <use xlink:href="#mobile" style="stroke-dasharray:4,4; stroke:lightgrey;" x="50" y="0" visibility="visible">
+  <set attributeName="visibility" attributeType="CSS" to="hidden" begin="0" dur="3s" />
+ </use>
+ <use xlink:href="#mobile" stroke="lightgrey" transform="rotate(-30) translate(50,0) rotate(60)" visibility="visible" >
+  <set attributeName="visibility" attributeType="CSS" to="hidden" begin="0" dur="3.25s" />
+ </use>
+ <use xlink:href="#mobile" stroke="lightgrey" transform="rotate(-110) translate(50,0) rotate(220)" visibility="visible">
+  <set attributeName="visibility" attributeType="CSS" to="hidden" begin="0" dur="3.9167s" />
+ </use>
+ <path d="M 100,0 -100,0" stroke-width="2" stroke-dasharray="200" stroke="blue" fill="none">
+  <animate attributeName="stroke-dashoffset" attributeType="XML" values="200;195;181;159;131;100;69;41;19;5;0" keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.6;0.7;0.8;0.9;1" begin="0" dur="1.5s" fill="freeze"/>
+  </path>
+ <path d="M 60,0 A 60,40 0 1 0 60,0.001" stroke-width="2" stroke-dasharray="320,320" stroke="green" fill="none">
+  <animate attributeName="stroke-dashoffset" attributeType="XML" values="320;0" keyTimes="0;1" begin="0" dur="3s" fill="freeze"/>
+ </path>
+ <path d="M 150,0 A 150,50 0 1 1 150,-0.001" stroke-width="2" stroke-dasharray="700,700" stroke="red" fill="none">
+  <animate attributeName="stroke-dashoffset" attributeType="XML" values="710;660;580;490;410;360;330;250;150;80;0" keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.6;0.7;0.8;0.9;1" begin="0" dur="3s" fill="freeze"/>
+ </path>
+</svg>

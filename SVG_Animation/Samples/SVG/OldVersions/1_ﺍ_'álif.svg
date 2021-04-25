@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="65" height="103" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#000" x="18" y="11" width="7" height="16">
+<animate attributeName="height" dur="0.64s" fill="freeze" values="16;36;56;76" calcMode="discrete" repeatCount="indefinite" />
+</rect>
+</svg>

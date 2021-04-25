@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg id="svg3" version="1.0" width="800" height="500" 
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:xlink="http://www.w3.org/1999/xlink">
+  <metadata id="metadata">
+    <rdf:RDF>
+      <cc:Work rdf:about="BTFT Timeline diagram">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Back To The Future trilogy</dc:title>
+        <dc:date>25-FEB-2009</dc:date>
+        <dc:creator>
+          <cc:Agent><dc:title>Richard Walledge</dc:title></cc:Agent>
+        </dc:creator>
+        <dc:identifier>BTTF trilogy time travel trips</dc:identifier>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <style type="text/css">
+    .p1 {fill:#ff8800}
+    .p2 {fill:#88ff00}
+    .p3 {fill:#0088ff}
+    text       {font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Verdana}
+    text:hover  {fill-opacity:1; stroke:black; stroke-width:0.5}
+    #timeline > kes {fill:yellow}
+    marker {fill: inherit}
+    .blkbd text.rom {fill: #ffffff; font-family: 'Zapfino', 'Handwriting Dakota', 'Comic Sans MS'; font-size: 9pt;}
+    .blkbd path {stroke: #ffffff}
+    .blkbd #background {fill: #000000}
+  </style>
+  <defs>
+    <linearGradient id="ryrgrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ff0000"/>
+      <stop offset="50%" stop-color="#ffff00"/>
+      <stop offset="100%" stop-color="#ff0000"/>
+    </linearGradient>
+    <linearGradient id="gbgrad" x1="0" x2="0" y1="0" y2="1">
+      <animateTransform attributeName="transform" attributeType="XML"
+      type="rotate" from="0" to="360" dur="9s" repeatCount="indefinite" />
+      <stop offset="0%" stop-color="#999999"/>
+      <stop offset="40%" stop-color="#aaaaaa"/>
+      <stop offset="50%" stop-color="#33ffff"/>
+      <stop offset="60%" stop-color="#aaaaaa"/>
+      <stop offset="100%" stop-color="#999999"/>
+    </linearGradient>
+
+    <marker id="endArrow" viewBox="0 0 10 10" refX="5" refY="5" markerUnits="strokeWidth" orient="auto" markerWidth="5" markerHeight="4">
+       <polyline points="0,0 10,5 0,10 1,5" />
+    </marker>
+    <marker id="midArrow" viewBox="0 0 10 10" refX="5" refY="5" markerUnits="strokeWidth" orient="auto" markerWidth="5" markerHeight="4">
+       <polyline points="10,0 0,5 10,10 9,5" fill="darkblue" />
+    </marker>
+  </defs>
+  <title>Back To The Future timeline</title>
+  <desc>Back To The Future timeline</desc>
+  <rect id="background" x="0" y="0" width="100%" height="100%" fill="#ffffff"/>
+
+  <text id="ctrls" fill="url(#ryrgrad)" stroke="url(#gbgrad)" style="#33ccff" stroke-width="1.7">
+    <animateMotion from="28,0" to="0,0" dur="1.4s" fill="freeze"/>
+    <tspan x="12" y="35" font-weight="bold" font-size="40" font-family="Arial Black">Back To </tspan>
+    <tspan x="12" y="70" font-weight="bold" font-size="40" font-family="Arial Black">The Future timelines 
+      <animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="0.1s" begin="0" fill="freeze"/>
+      <animate attributeType="CSS" attributeName="opacity" from="0" to="1" dur="2s" begin="1.2s" fill="freeze"/>
+    </tspan>
+  </text>
+  <text>
+    <animateMotion from="0,0" to="-150,0" dur="0.1s" begin="" fill="freeze"/>
+    <animateMotion from="-150,0" to="0,0" dur="1.5s" begin="2.5s" fill="freeze"/>
+  </text>
+
+  <g id="timeline">
+    <line id="original" x1="60" y1="250" x2="515" y2="250" stroke="#3333ff" stroke-width="3" marker-end="url(#endArrow)">
+    </line>
+    <polyline id="writer" points="290,250 305,270 730,270" stroke="#ff9900" fill="none" stroke-width="3" marker-end="url(#endArrow)">
+      <animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="0.1s" fill="freeze" begin="showtrig.click"/>
+      <animate attributeType="CSS" attributeName="opacity" from="0" to="1" dur="0.1s" fill="freeze" begin="showtrig.click+3s"/>
+    </polyline>
+    <polyline id="alternate" points="290,250 290,290 730,290" stroke="#ff0000" fill="none" stroke-dasharray="260,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,4" stroke-width="3" marker-end="url(#endArrow)">
+      <animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="0.1s" fill="freeze" begin="showtrig.click"/>
+      <animate attributeType="CSS" attributeName="opacity" from="0" to="1" dur="0.1s" fill="freeze" begin="showtrig.click+9s"/>
+    </polyline>
+    <polyline id="shonash" points="95,250 95,310 290,310" stroke="#00ff00" fill="none" stroke-width="3" marker-end="url(#endArrow)">
+      <animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="0.1s" fill="freeze" begin="showtrig.click"/>
+      <animate attributeType="CSS" attributeName="opacity" from="0" to="1" dur="0.1s" fill="freeze" begin="showtrig.click+12s"/>
+    </polyline>
+    <polyline id="eastwood" points="105,310 120,330 730,330" stroke="#bb00ff" fill="none" stroke-width="3" marker-end="url(#endArrow)">
+      <animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="0.1s" fill="freeze" begin="showtrig.click"/>
+      <animate attributeType="CSS" attributeName="opacity" from="0" to="1" dur="0.1s" fill="freeze" begin="showtrig.click+14s"/>
+    </polyline>
+
+    <text id="yr1885" x="80" y="240" class="rom">1885</text>
+    <text id="yr1955" x="290" y="240" class="rom">1955</text>
+    <text id="yr1985" x="500" y="240" class="rom">1985</text>
+    <text id="yr2015" x="710" y="240" class="rom">2015</text>
+
+    <g class="p1">
+    <path id="t1" d="M 490,227 A 10,10 0 0 1 504,227" stroke="black" fill="none" marker-end="url(#endArrow)">
+      <animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="0.1s" fill="freeze" begin="showtrig.click"/>
+      <animate attributeType="CSS" attributeName="opacity" from="0" to="1" dur="0.1s" fill="freeze" begin="showtrig.click+1s"/>
+    </path>
+    <path id="t2" d="M 510,227 A 100,80 0 0 0 310,227" stroke="black" fill="none" marker-end="url(#endArrow)">
+      <animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="0.1s" fill="freeze" begin="showtrig.click"/>
+      <animate attributeType="CSS" attributeName="opacity" from="0" to="1" dur="0.1s" fill="freeze" begin="showtrig.click+2s"/>
+    </path>
+    <path id="t3" d="M 315,227 A 100,80 0 0 1 510,227" stroke="black" fill="none" marker-end="url(#endArrow)">
+      <animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="0.1s" fill="freeze" begin="showtrig.click"/>
+      <animate attributeType="CSS" attributeName="opacity" from="0" to="1" dur="0.1s" fill="freeze" begin="showtrig.click+3s"/>
+    </path>
+    <path id="t4" d="M 510,227 A 100,80 0 0 1 710,227" stroke="black" fill="none" marker-end="url(#endArrow)">
+      <animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="0.1s" fill="freeze" begin="showtrig.click"/>
+      <animate attributeType="CSS" attributeName="opacity" from="0" to="1" dur="0.1s" fill="freeze" begin="showtrig.click+4s"/>
+    </path>
+    <path id="t5" d="M 715,227 A 10,10 0 0 1 729,227" stroke="black" fill="none" marker-end="url(#endArrow)">
+      <animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="0.1s" fill="freeze" begin="showtrig.click"/>
+      <animate attributeType="CSS" attributeName="opacity" from="0" to="1" dur="0.1s" fill="freeze" begin="showtrig.click+5s"/>
+    </path>
+    <path id="t6" d="M 730,272 A 100,40 0 0 1 510,272" stroke="black" fill="none" marker-end="url(#endArrow)">
+      <animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="0.1s" fill="freeze" begin="showtrig.click"/>
+      <animate attributeType="CSS" attributeName="opacity" from="0" to="1" dur="0.1s" fill="freeze" begin="showtrig.click+6s"/>
+    </path>
+    </g>
+    <g class="p2">
+    <path id="t7" d="M 510,272 A 100,30 0 0 0 730,272" stroke="black" fill="none" marker-end="url(#endArrow)">
+      <animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="0.1s" fill="freeze" begin="showtrig.click"/>
+      <animate attributeType="CSS" attributeName="opacity" from="0" to="1" dur="0.1s" fill="freeze" begin="showtrig.click+7s"/>
+    </path>
+    <path id="t8" d="M 730,272 A 100,50 0 0 1 290,272" stroke="black" fill="none" marker-end="url(#endArrow)">
+      <animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="0.1s" fill="freeze" begin="showtrig.click"/>
+      <animate attributeType="CSS" attributeName="opacity" from="0" to="1" dur="0.1s" fill="freeze" begin="showtrig.click+8s"/>
+    </path>
+    <path id="t9" d="M 290,227 A 100,80 0 0 1 730,227" stroke="black" fill="none" marker-end="url(#endArrow)">
+      <animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="0.1s" fill="freeze" begin="showtrig.click"/>
+      <animate attributeType="CSS" attributeName="opacity" from="0" to="1" dur="0.1s" fill="freeze" begin="showtrig.click+9s"/>
+    </path>
+    <path id="t10" d="M 730,227 A 100,100 0 0 0 510,227" stroke="black" fill="none" marker-end="url(#endArrow)">
+      <animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="0.1s" fill="freeze" begin="showtrig.click"/>
+      <animate attributeType="CSS" attributeName="opacity" from="0" to="1" dur="0.1s" fill="freeze" begin="showtrig.click+10s"/>
+    </path>
+    <path id="t11" d="M 510,292 A 100,100 0 0 1 290,292" stroke="black" fill="none" marker-end="url(#endArrow)">
+      <animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="0.1s" fill="freeze" begin="showtrig.click"/>
+      <animate attributeType="CSS" attributeName="opacity" from="0" to="1" dur="0.1s" fill="freeze" begin="showtrig.click+11s"/>
+    </path>
+    <path id="t12" d="M 290,272 A 100,40 0 0 1 95,272" stroke="black" fill="none" marker-end="url(#endArrow)">
+      <animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="0.1s" fill="freeze" begin="showtrig.click"/>
+      <animate attributeType="CSS" attributeName="opacity" from="0" to="1" dur="0.1s" fill="freeze" begin="showtrig.click+12s"/>
+    </path>
+    </g>
+    <g class="p3">
+    <path id="t13" d="M 290,227 A 100,80 0 0 0 95,227" stroke="black" fill="none" marker-end="url(#endArrow)">
+      <animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="0.1s" fill="freeze" begin="showtrig.click"/>
+      <animate attributeType="CSS" attributeName="opacity" from="0" to="1" dur="0.1s" fill="freeze" begin="showtrig.click+13s"/>
+    </path>
+    <path id="t14" d="M 95,227 A 100,80 0 0 1 510,227" stroke="black" fill="none" marker-end="url(#endArrow)" marker-mid="url(#midArrow)">
+      <animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="0.1s" fill="freeze" begin="showtrig.click"/>
+      <animate attributeType="CSS" attributeName="opacity" from="0" to="1" dur="0.1s" fill="freeze" begin="showtrig.click+14s"/>
+    </path>
+    </g>
+
+    <text class="rom">
+      <tspan id="showtrig" x="2" y="490" >Animate DeLorean trips!</tspan>
+    </text>
+ 
+  </g>
+</svg>
