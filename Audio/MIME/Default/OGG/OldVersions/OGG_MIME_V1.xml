@@ -1,0 +1,27 @@
+<!-- Start of script !-->
+<!-- The default MIME type for SVG Video is OGG, as it is the most open and accessible audio format available. Distributions can swap out with whatever audio format they would like !-->
+<audioMIMEType>
+  <!-- The default audio MIME type for SVG video !-->
+  <webMIMEType> <!-- For websites and web applications !-->
+  <!--
+  OGG formats
+  .ogg, .ogv, .oga, .ogx, .ogm, .spx, .opus
+  Supported OGG formats
+  .ogg, .oga
+  !-->
+  <!-- Not supported: video/ogg, !-->
+    <oggMIMETypeTrueAudio>audio/ogg</oggMIMETypeTrueAudio>
+    <altOgaMIMETypeTrueAudio>audio/oga</altOgaMIMETypeTrueAudio>
+  <!-- Not supported: application/ogg !-->
+  </webMIMEType>
+  <MIMETypeAudio> <!-- For non-web applications !-->
+    <isoMIMETypeA>audio/ogg</isoMIMETypeA>
+    <isoMIMETypeB>audio/oga</isoMIMETypeB>
+  </MIMETypeAudio>
+</audioMIMEType>
+<!-- File info
+File type: XML document (*.xml)
+File version: 1 (Sunday, April 25th 2021 at 11:09 am)
+Line count (including blank lines and compiler line): 28
+!-->
+<!-- End of script
