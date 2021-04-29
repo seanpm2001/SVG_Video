@@ -1,0 +1,25 @@
+<!-- Start of script !-->
+<!-- This alternative MIME type for SVG Video is MP2, as not everybody will want to use OGG, and MP2 playback may be needed !-->
+<audioMIMEType>
+  <!-- The default audio MIME type for SVG video !-->
+  <webMIMEType> <!-- For websites and web applications !-->
+  <!--
+  MP2 formats
+  .mp2
+  Supported MP2 formats
+  .mp2
+  !-->
+  <!-- Not supported: video/mp4, !-->
+    <mp2MIMETypeTrueAudio>audio>MP2</mp2MIMETypeTrueAudio>
+  <!-- Not supported: application/mp2 !-->
+  </webMIMEType>
+  <MIMETypeAudio> <!-- For non-web applications !-->
+    <isoMIMETypeA>audio/mp2</isoMIMETypeA>
+    </MIMETypeAudio>
+</audioMIMEType>
+<!-- File info
+File type: XML document (*.xml)
+File version: 1 (Wednesday, April 28th 2021 at 6:12 am)
+Line count (including blank lines and compiler line): 26
+!-->
+<!-- End of script
