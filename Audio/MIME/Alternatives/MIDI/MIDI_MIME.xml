@@ -1,0 +1,27 @@
+<!-- Start of script !-->
+<!-- This alternative MIME type for SVG Video is MIDI, as not everybody will want to use OGG, and MIDI playback may be needed !-->
+<audioMIMEType>
+  <!-- The default audio MIME type for SVG video !-->
+  <webMIMEType> <!-- For websites and web applications !-->
+  <!--
+  MIDI formats
+  .midi .mid
+  Supported MIDI formats
+  .midi .mid
+  !-->
+  <!-- Not supported: video/midi, !-->
+    <midiMIMETypeTrueAudio>audio>MIDI</midiMIMETypeTrueAudio>
+    <altMidiMIMETypeTrueAudio>audio/MID</altMidiMIMETypeTrueAudio>
+  <!-- Not supported: application/midi !-->
+  </webMIMEType>
+  <MIMETypeAudio> <!-- For non-web applications !-->
+    <isoMIMETypeA>audio/midi</isoMIMETypeA>
+    <isoMIMETypeB>audio/mid</isoMIMETypeB>
+    </MIMETypeAudio>
+</audioMIMEType>
+<!-- File info
+File type: XML document (*.xml)
+File version: 1 (Wednesday, April 28th 2021 at 6:06 am)
+Line count (including blank lines and compiler line): 28
+!-->
+<!-- End of script
