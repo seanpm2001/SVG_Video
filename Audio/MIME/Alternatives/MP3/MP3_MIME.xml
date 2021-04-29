@@ -1,0 +1,25 @@
+<!-- Start of script !-->
+<!-- This alternative MIME type for SVG Video is MP3, as not everybody will want to use OGG, and MP3 playback may be needed !-->
+<audioMIMEType>
+  <!-- The default audio MIME type for SVG video !-->
+  <webMIMEType> <!-- For websites and web applications !-->
+  <!--
+  MP3 formats
+  .mp3
+  Supported MP3 formats
+  .mp3
+  !-->
+  <!-- Not supported: video/mp4, !-->
+    <mp3MIMETypeTrueAudio>audio>MP3</mp3MIMETypeTrueAudio>
+  <!-- Not supported: application/mp3 !-->
+  </webMIMEType>
+  <MIMETypeAudio> <!-- For non-web applications !-->
+    <isoMIMETypeA>audio/mp3</isoMIMETypeA>
+    </MIMETypeAudio>
+</audioMIMEType>
+<!-- File info
+File type: XML document (*.xml)
+File version: 1 (Wednesday, April 28th 2021 at 6:02 am)
+Line count (including blank lines and compiler line): 26
+!-->
+<!-- End of script
