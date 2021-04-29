@@ -1,0 +1,25 @@
+<!-- Start of script !-->
+<!-- This alternative MIME type for SVG Video is ALAC, as not everybody will want to use OGG, and ALAC playback may be needed !-->
+<audioMIMEType>
+  <!-- The default audio MIME type for SVG video !-->
+  <webMIMEType> <!-- For websites and web applications !-->
+  <!--
+  ALAC formats
+  .ALAC
+  Supported ALAC formats
+  .ALAC
+  !-->
+  <!-- Not supported: video/mp4, !-->
+    <ALACMIMETypeTrueAudio>audio>ALAC</ALACMIMETypeTrueAudio>
+  <!-- Not supported: application/ALAC !-->
+  </webMIMEType>
+  <MIMETypeAudio> <!-- For non-web applications !-->
+    <isoMIMETypeA>audio/ALAC</isoMIMETypeA>
+    </MIMETypeAudio>
+</audioMIMEType>
+<!-- File info
+File type: XML document (*.xml)
+File version: 1 (Wednesday, April 28th 2021 at 6:14 am)
+Line count (including blank lines and compiler line): 26
+!-->
+<!-- End of script
