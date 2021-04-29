@@ -1,0 +1,25 @@
+<!-- Start of script !-->
+<!-- This alternative MIME type for SVG Video is FLAC, as not everybody will want to use OGG, and FLAC playback may be needed !-->
+<audioMIMEType>
+  <!-- The default audio MIME type for SVG video !-->
+  <webMIMEType> <!-- For websites and web applications !-->
+  <!--
+  FLAC formats
+  .FLAC
+  Supported FLAC formats
+  .FLAC
+  !-->
+  <!-- Not supported: video/mp4, !-->
+    <FLACMIMETypeTrueAudio>audio>FLAC</FLACMIMETypeTrueAudio>
+  <!-- Not supported: application/FLAC !-->
+  </webMIMEType>
+  <MIMETypeAudio> <!-- For non-web applications !-->
+    <isoMIMETypeA>audio/FLAC</isoMIMETypeA>
+    </MIMETypeAudio>
+</audioMIMEType>
+<!-- File info
+File type: XML document (*.xml)
+File version: 1 (Wednesday, April 28th 2021 at 6:15 am)
+Line count (including blank lines and compiler line): 26
+!-->
+<!-- End of script
